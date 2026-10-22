@@ -1,0 +1,47 @@
+No,Kategori,RefDes,Qty,Deskripsi,Manufacturer,Part Number,Paket,Fungsi,Catatan
+1,Komunikasi Artisan USB,J_USB_ART,1,Socket USB panel feedthrough,Neutrik,NAUSB-W,FIELD,Colokan USB user ke Artisan,Sisi luar = USB-B - BUKAN J_USB PCB / BUKAN USB DevKit
+2,Komunikasi Artisan USB,U_USB485,1,Modul USB-RS485 isolated DIN-rail,Waveshare,USB TO RS232/485 (B) SKU26547,FIELD,Isolasi >=2.5kV USB ke RS485,Pasang di dalam box; terminasi 120R ON; set mode RS485
+3,Kabel,CBL_USB_INT,1,Kabel USB internal panel ke modul <=0.5m,Generic,USB-A-M to USB-B-M 0.3-0.5m,FIELD,J_USB_ART dalam ke U_USB485 USB-B,Tetap di dalam enclosure
+4,Kabel,CBL_USB_USER,1,Kabel USB user laptop ke panel 1.8-3m,Generic,USB-C-M to USB-B-M 2m (alt: USB-A-M to USB-B-M),FIELD,Dikirim bersama mesin,User HANYA kabel ini ke J_USB_ART - tanpa dongle
+5,Buck module,-,1,6V 3A buck module,Generic,LM2596 adj,FIELD,Servo RDS3225,Control box - bukan PCB-02 SMT/THT
+6,Jumper,JP1-JP2,2,3-pin header jumper,Generic,2.54mm,FIELD,Pot manual override AI,Control box - bukan PCB-02 SMT/THT
+7,Proteksi,F_GAS,1,MCB 1P 6A,Schneider,iC60N C6,FIELD,Gas branch,Control box - bukan PCB-02 SMT/THT
+8,Proteksi,F_VFD_D,1,MCB 1P 10A,Schneider,iC60N C10,FIELD,Drum VFD,Control box - bukan PCB-02 SMT/THT
+9,Proteksi,F_VFD_F,1,MCB 1P 6A,Schneider,iC60N C6,FIELD,Fan VFD,Control box - bukan PCB-02 SMT/THT
+10,Proteksi,F_MOT,1,MCB 1P 10A,Schneider,iC60N C10,FIELD,Agitator,Control box - bukan PCB-02 SMT/THT
+11,Proteksi,F_MOT2,1,MCB 1P 6A,Schneider,iC60N C6,FIELD,Cool fan,Control box - bukan PCB-02 SMT/THT
+12,Drive,VFD1,1,VFD 2.2kW 1ph220V,AT1,AT1-2200,FIELD,Drum motor,
+13,Drive,VFD2,1,VFD 1.5kW 1ph220V,AT1,AT1-1500,FIELD,Cyclone fan,
+14,Gas,VX1,2,Solenoid gas 220VAC 1/2,SMC,VX2120-08E2,FIELD,Gas valves,
+15,Gas,GX1,1,Burner module 220VAC,Generic,GX103 AC-220V,FIELD,Flame control + 2x dry relay FB,
+16,Servo,SERVO1,1,Digital servo 25kg,RDS,RDS3225,FIELD,Burner valve,
+17,Motor,M1,1,Drum motor,NRM,NRMV 040 550W,FIELD,Drum,
+18,Motor,M2,1,Agitator motor,NRM,NRMV 040 550W,FIELD,Cooling bin,
+19,Motor,M3,1,Cyclone fan 135W,Generic,Centrifugal 135W,FIELD,Exhaust,
+20,Motor,M4,1,Cooling fan 135W,Generic,Centrifugal 135W,FIELD,Cooling bin,
+21,Sensor,TC1-TC3,3,TC K-type probe 3m shielded,Generic,K-type,FIELD,Bean/Env/Drum,
+22,Sensor,PR1,1,Proximity PRL12-4DN,Autonics,PRL12-4DN,FIELD,Drum RPM,
+23,Sensor,PS1,1,Pressure 0-12bar 5Vdc,Generic,0-12Bar 5V,FIELD,LPG pressure alarm <2kPa,
+24,Sensor,MQ1,1,Gas sensor MQ-6,Generic,MQ-6,FIELD,LPG leak,
+25,Panel,SW_MAIN,1,Selector main power,Autonics,S2SR-S3WA,FIELD,Mains ON/OFF,
+26,Panel,SW_AIR,1,Double push illuminated 12VDC,Autonics,S2TR-P3WABD,FIELD,Air fan + LED block,
+27,Panel,SW_DRUM,1,Double push illuminated 12VDC,Autonics,S2TR-P3WABD,FIELD,Drum + LED block,
+28,Panel,SW_BURN,1,Double push illuminated 12VDC,Autonics,S2TR-P3WABD,FIELD,Burner + LED block,
+29,Panel,SW_COOL,1,Double push illuminated 12VDC,Autonics,S2TR-P3WABD,FIELD,Cooling bin + LED block,
+30,Panel,SW_PUMP,1,LED push 16mm 12V,Generic,16mm metal LED,FIELD,Water pump,
+31,Panel,SW_ESTOP,1,E-Stop mushroom 2NC,Autonics,S2ER-E4R2BD,FIELD,Emergency,
+32,Panel,POT1-3,3,Pot 10k linear,Bourns,PTV09A-4020F-B103,FIELD,Air/Burner/Drum,
+33,HMI,LCD1,1,Nextion 10 cap 70,Nextion,NX8048K070-011C,FIELD,HMI,
+34,Audio,SP1,1,Speaker 3W 8ohm,Generic,3W 8R,FIELD,DFPlayer 4 alarm tracks,
+35,Kabel,CBL_H1,1,Harness panel to MAIN,Belden,multi-conductor,FIELD,H1 2x16,
+36,IO,F_LED,1,Fuse 500mA 12V,Littlefuse,0215005.MXP,FIELD,Panel lamp bus 12V,Control box - bukan PCB-02 SMT/THT
+37,Kontaktor,AUX_KGAS,1,Aux NO block 1NO,Schneider,LAEN11N,FIELD,K_GAS lamp feedback,Control box - bukan PCB-02 SMT/THT
+38,Kontaktor,AUX_K3,1,Aux NO block 1NO,Schneider,LAEN11N,FIELD,K3 cooling lamp feedback,Control box - bukan PCB-02 SMT/THT
+39,Kabel,CBL_H1L,1,Harness panel lamps to IO,Belden,6x22AWG,FIELD,H1L lamp 12V,
+40,Kabel,CBL_H2A,1,Harness TC to MAIN,Belden,shielded 3x,FIELD,TC direct,
+41,Kabel,CBL_H2B,1,Harness IO to field,Belden,multi-conductor,FIELD,Power/motor/gas FB,
+42,Kabel,CBL_H3,1,Harness safety power,Belden,2.5mm2,FIELD,E-Stop chain,
+43,Kabel,CBL_RS485,1,RS485 shielded pendek,Belden,9841,FIELD,U_USB485 A/B/GND -> J4 MAIN,<0.5m di dalam box; shield ke J4 GND/PE sesuai wiring 04
+44,Enclosure,-,1,Control box IP54,Custom,D03-CTRL-BOX,FIELD,PCB+contactors+VFD,
+45,Gas,REL_BR_ON,1,Aux dry relay burner ON,Schneider,RMM2LG7T22FW,FIELD,GX103 burner ON -> H2B-20,
+46,Gas,REL_BR_FL,1,Aux dry relay flame sense,Schneider,RMM2LG7T22FW,FIELD,GX103 flame FB -> H2B-21,

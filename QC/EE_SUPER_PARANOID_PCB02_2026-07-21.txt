@@ -1,0 +1,85 @@
+# D03 PCB-02 SUPER-PARANOID EE AUDIT
+# Date: 2026-07-21
+# PCB sha256: e66cc1c374d568683ab9be30b7fd53763eb7de4b30c5686a3ee2a8f2a1b2de30
+# Footprints=54 active=50 BOM=50
+# tracks=0 vias=0 bom_non_ascii=0 pad_nets_checked=151
+
+## VERDICT: PASS 100% — GO ROUTE (SUPER-PARANOID)
+FAIL_COUNT = 0
+FAILS = none
+
+## A. AO3400 datasheet 1=G 2=S 3=D + low-side topology
+- Q_GAS: val=AO3400 nets={'1': 'GATE_GAS', '2': 'GND', '3': 'K_GAS_COIL+'} geomOK=True -> OK
+- Q_AGIT: val=AO3400 nets={'1': 'GATE_AGIT', '2': 'GND', '3': 'AGIT_EN'} geomOK=True -> OK
+- Q_COOL: val=AO3400 nets={'1': 'GATE_COOL', '2': 'GND', '3': 'COOL_FAN_EN'} geomOK=True -> OK
+- Q_PUMP: val=AO3400 nets={'1': 'GATE_PUMP', '2': 'GND', '3': 'PUMP_EN'} geomOK=True -> OK
+- Q_VFD_D: val=AO3400 VFD_D nets={'1': 'GATE_VFD_D', '2': 'GND', '3': 'VFD_D_RUN'} geomOK=True -> OK
+- Q_VFD_F: val=AO3400 VFD_F nets={'1': 'GATE_VFD_F', '2': 'GND', '3': 'VFD_F_RUN'} geomOK=True -> OK
+## B. LM358 SOIC-8 pinout + 0-10V gain
+- U20 nets={'1': 'VFD1_AI', '2': 'U20_INA_N', '3': 'DAC_D_OUT', '4': 'GND', '5': 'DAC_F_OUT', '6': 'U20_INB_N', '7': 'VFD2_AI', '8': '+12V_AUX'} -> OK
+- R_FA=20k nets={'1': 'VFD1_AI', '2': 'U20_INA_N'} -> OK
+- R_GA=10k nets={'1': 'U20_INA_N', '2': 'GND'} -> OK
+- R_FB=20k nets={'1': 'VFD2_AI', '2': 'U20_INB_N'} -> OK
+- R_GB=10k nets={'1': 'U20_INB_N', '2': 'GND'} -> OK
+## C. Flyback diode polarity (pad1=K, pad2=A)
+- D2: nets={'1': '+24V_BUS', '2': 'VFD_D_RUN'} silk=SS34 -> OK
+- D3: nets={'1': '+24V_BUS', '2': 'AGIT_EN'} silk=1N5819 -> OK
+- D4: nets={'1': '+12V_AUX', '2': 'PUMP_EN'} silk=1N5819 -> OK
+- D5: nets={'1': '+24V_BUS', '2': 'VFD_F_RUN'} silk=1N5819 -> OK
+- D6: nets={'1': '+24V_BUS', '2': 'COOL_FAN_EN'} silk=1N5819 -> OK
+- D_GAS: nets={'1': '+24V_BUS', '2': 'K_GAS_COIL+'} silk=1N4007 -> OK
+## D. Gate drive series+PD
+- R_G1/R_G2: series={'1': 'GAS_EN', '2': 'GATE_GAS'} pd={'1': 'GATE_GAS', '2': 'GND'} -> OK
+- R_AGIT_S/R_Q3_G: series={'1': 'AGIT_EN', '2': 'GATE_AGIT'} pd={'1': 'GATE_AGIT', '2': 'GND'} -> OK
+- R_COOL_S/R_Q7: series={'1': 'COOL_FAN_EN', '2': 'GATE_COOL'} pd={'1': 'GATE_COOL', '2': 'GND'} -> OK
+- R_PUMP_S/R_Q4_G: series={'1': 'PUMP_EN', '2': 'GATE_PUMP'} pd={'1': 'GATE_PUMP', '2': 'GND'} -> OK
+- R_VFD_D_S/R_VFD_D_G: series={'1': 'VFD_D_RUN', '2': 'GATE_VFD_D'} pd={'1': 'GATE_VFD_D', '2': 'GND'} -> OK
+- R_VFD_F_S/R_VFD_F_G: series={'1': 'VFD_F_RUN', '2': 'GATE_VFD_F'} pd={'1': 'GATE_VFD_F', '2': 'GND'} -> OK
+## E. VFD field I/O
+- J_VFD_D: {'1': 'VFD1_AI', '2': 'GND'} -> OK
+- J_VFD_F: {'1': 'VFD2_AI', '2': 'GND'} -> OK
+- REL_VFD_D: {'LOAD': 'VFD1_FOR', 'AC': 'VFD1_FOR_COM', 'CTRL+': '+24V_BUS', 'CTRL-': 'VFD_D_RUN'} -> OK
+- REL_VFD_F: {'LOAD': 'VFD2_FOR', 'AC': 'VFD2_FOR_COM', 'CTRL+': '+24V_BUS', 'CTRL-': 'VFD_F_RUN'} -> OK
+## F. Firmware chain
+- PCF_OUT_GAS=0 J9-5=GAS_EN Q_GAS.1=GATE_GAS .2=GND -> OK
+- PCF_OUT_VFD_D=1 J9-6=VFD_D_RUN Q_VFD_D.1=GATE_VFD_D .2=GND -> OK
+- PCF_OUT_VFD_F=2 J9-7=VFD_F_RUN Q_VFD_F.1=GATE_VFD_F .2=GND -> OK
+- PCF_OUT_AGIT=3 J9-8=AGIT_EN Q_AGIT.1=GATE_AGIT .2=GND -> OK
+- PCF_OUT_COOL=4 J9-9=COOL_FAN_EN Q_COOL.1=GATE_COOL .2=GND -> OK
+- PCF_OUT_PUMP=5 J9-10=PUMP_EN Q_PUMP.1=GATE_PUMP .2=GND -> OK
+- active-high loads: True
+- FW_VERSION_BCD=0x010E PCF_OUT_ADDR=0x20
+## G. BOM PN == PCB value (semiconductors/passives)
+- C18: PCB='100nF' BOM='0603 100nF' -> OK
+- C19: PCB='100nF' BOM='0603 100nF' -> OK
+- C20: PCB='10uF' BOM='0805 10uF' -> OK
+- D2: PCB='SS34' BOM='SS34' -> OK
+- D3: PCB='1N5819' BOM='1N5819' -> OK
+- D4: PCB='1N5819' BOM='1N5819' -> OK
+- D5: PCB='1N5819' BOM='1N5819' -> OK
+- D6: PCB='1N5819' BOM='1N5819' -> OK
+- D_GAS: PCB='1N4007' BOM='1N4007' -> OK
+- Q_AGIT: PCB='AO3400' BOM='AO3400' -> OK
+- Q_COOL: PCB='AO3400' BOM='AO3400' -> OK
+- Q_GAS: PCB='AO3400' BOM='AO3400' -> OK
+- Q_PUMP: PCB='AO3400' BOM='AO3400' -> OK
+- Q_VFD_D: PCB='AO3400 VFD_D' BOM='AO3400' -> OK
+- Q_VFD_F: PCB='AO3400 VFD_F' BOM='AO3400' -> OK
+- R_AGIT_S: PCB='1k' BOM='RC0603 1k' -> OK
+- R_COOL_S: PCB='1k' BOM='RC0603 1k' -> OK
+- R_FA: PCB='20k' BOM='RC0603 20k' -> OK
+- R_FB: PCB='20k' BOM='RC0603 20k' -> OK
+- R_G1: PCB='1k' BOM='RC0603 1k' -> OK
+- R_G2: PCB='10k' BOM='RC0603 10k' -> OK
+- R_GA: PCB='10k' BOM='RC0603 10k' -> OK
+- R_GB: PCB='10k' BOM='RC0603 10k' -> OK
+- R_PUMP_S: PCB='1k' BOM='RC0603 1k' -> OK
+- R_Q3_G: PCB='10k' BOM='RC0603 10k' -> OK
+- R_Q4_G: PCB='10k' BOM='RC0603 10k' -> OK
+- R_Q7: PCB='4.7k' BOM='RC0603 4.7k' -> OK
+- R_VFD_D_G: PCB='10k' BOM='RC0603 10k' -> OK
+- R_VFD_D_S: PCB='1k' BOM='RC0603 1k' -> OK
+- R_VFD_F_G: PCB='10k' BOM='RC0603 10k' -> OK
+- R_VFD_F_S: PCB='1k' BOM='RC0603 1k' -> OK
+- U20: PCB='LM358' BOM='LM358' -> OK
+

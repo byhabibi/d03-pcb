@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 920" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1200" height="920" fill="#faf9f7"/>
+  <text x="40" y="40" font-size="22" font-weight="700">L3 · MANUFACTURING / FAB NOTES D03 (kirim ke pabrik)</text>
+  <text x="40" y="68" font-size="13" fill="#4a5568">Satu halaman — pabrik tidak perlu tanya spek dasar · gas 3 kg Fase 1</text>
+
+  <rect x="40" y="100" width="700" height="520" fill="#fff" stroke="#2b6cb0" stroke-width="2" rx="8"/>
+  <text x="60" y="145" font-size="15" font-weight="700">PCB stack</text>
+  <text x="60" y="180" font-size="14">Material          FR4</text>
+  <text x="60" y="210" font-size="14">Thickness         1.6 mm</text>
+  <text x="60" y="240" font-size="14">Layers            2</text>
+  <text x="60" y="270" font-size="14">Copper            1 oz (35 µm) outer</text>
+  <text x="60" y="300" font-size="14">Surface finish    HASL lead-free  (atau ENIG jika disetujui Hartanzah)</text>
+  <text x="60" y="330" font-size="14">Solder mask       Green</text>
+  <text x="60" y="360" font-size="14">Silkscreen        White</text>
+  <text x="60" y="390" font-size="14">Via               Tented (mask over via) preferred</text>
+  <text x="60" y="420" font-size="14">Impedance control No</text>
+  <text x="60" y="450" font-size="14">Panelization      No (kecuali PO terpisah)</text>
+  <text x="60" y="490" font-size="14">Boards            D03-MAIN-CTRL + D03-IO-PWR (2 proyek)</text>
+  <text x="60" y="530" font-size="14">Assembly note     MAIN = header seats + plug-in modules</text>
+  <text x="60" y="570" font-size="13" fill="#718096">Min track/space ikut L3_02 · HV clearance IO = DRC</text>
+
+  <rect x="760" y="100" width="400" height="520" fill="#fff5f5" stroke="#c53030" stroke-width="2.5" rx="8"/>
+  <text x="780" y="145" font-size="15" font-weight="700" fill="#c53030">REJECT / HOLD</text>
+  <text x="780" y="185" font-size="13">Tolak Gerber jika:</text>
+  <text x="780" y="220" font-size="13">· ESP32-WROOM soldered</text>
+  <text x="780" y="250" font-size="13">· MP1584EN SOT + trimpot</text>
+  <text x="780" y="280" font-size="13">· L4 / discrete inductor</text>
+  <text x="780" y="310" font-size="13">· MAX31856 SOIC (bukan breakout)</text>
+  <text x="780" y="340" font-size="13">· U8 populated + DevKit</text>
+  <text x="780" y="370" font-size="13">· U11 hilang (PCF IN wajib)</text>
+  <text x="780" y="410" font-size="13">· J9.1 labeled +12V</text>
+  <text x="780" y="450" font-size="13">· DRC tidak 0</text>
+  <text x="780" y="500" font-size="12" fill="#744210">Wajib: DevKit + FIXED 5V</text>
+  <text x="780" y="530" font-size="12" fill="#744210">+ TC MODULE ×3 di positions</text>
+  <text x="780" y="570" font-size="12" fill="#744210">VIN silk = +24V</text>
+
+  <rect x="40" y="650" width="1120" height="220" fill="#fffbeb" stroke="#d69e2e" stroke-width="2" rx="8"/>
+  <text x="60" y="690" font-size="15" font-weight="700">Deliverables zip</text>
+  <text x="60" y="725" font-size="14">Gerber F/B Cu · Mask · Paste · Silk · Edge_Cuts · drill · positions.csv · BOM CSV</text>
+  <text x="60" y="760" font-size="14">Nama file board jelas MAIN vs IO · rev seats Fase 1</text>
+  <text x="60" y="795" font-size="14">Assembly: standoff M2.5 nylon qty 8 · U8/J_USB = DNP · flash via USB DevKit</text>
+  <text x="60" y="830" font-size="13" fill="#c53030">Kontak engineer Hartanzah jika DRC laporan tidak 0 atau positions mencurigakan</text>
+</svg>

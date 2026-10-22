@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 670" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1280" height="670" fill="#faf9f7"/>
+  <text x="40" y="40" font-size="22" font-weight="700">L3 · BOM LOCK D03 (tidak boleh diganti sembarangan)</text>
+  <text x="40" y="68" font-size="13" fill="#4a5568">Sumber: D03_BOM_Production.csv · purchasing harus patuh kolom MPN + catatan</text>
+  <text x="40" y="95" font-size="12" font-weight="700">RefDes          MPN / spek kunci</text>
+  
+  <rect x="40" y="110" width="140" height="40" fill="#2d3748" rx="4"/>
+  <text x="110" y="136" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">U1</text>
+  <rect x="190" y="110" width="300" height="40" fill="#c6f6d5" stroke="#276749" rx="4"/>
+  <text x="200" y="136" font-size="13" font-weight="700">ESP32-DevKitC-32E</text>
+  <text x="510" y="136" font-size="13">HARUS DevKitC plug-in — bukan ESP32-WROOM soldered</text>
+  <rect x="40" y="158" width="140" height="40" fill="#2d3748" rx="4"/>
+  <text x="110" y="184" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">U3</text>
+  <rect x="190" y="158" width="300" height="40" fill="#c6f6d5" stroke="#276749" rx="4"/>
+  <text x="200" y="184" font-size="13" font-weight="700">MP1584-FIXED-5V</text>
+  <text x="510" y="184" font-size="13">HARUS FIXED 5V VIN≥28V — LARANG adjustable/trimpot · QC 4.90–5.10</text>
+  <rect x="40" y="206" width="140" height="40" fill="#2d3748" rx="4"/>
+  <text x="110" y="232" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">U4/U5/U6</text>
+  <rect x="190" y="206" width="300" height="40" fill="#c6f6d5" stroke="#276749" rx="4"/>
+  <text x="200" y="232" font-size="13" font-weight="700">MAX31856 breakout ×3</text>
+  <text x="510" y="232" font-size="13">HARUS breakout header — bukan chip SOIC di PCB</text>
+  <rect x="40" y="254" width="140" height="40" fill="#2d3748" rx="4"/>
+  <text x="110" y="280" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">U2</text>
+  <rect x="190" y="254" width="300" height="40" fill="#c6f6d5" stroke="#276749" rx="4"/>
+  <text x="200" y="280" font-size="13" font-weight="700">MCP1700-3302E</text>
+  <text x="510" y="280" font-size="13">3.3V analog TC saja — bukan rail DevKit</text>
+  <rect x="40" y="302" width="140" height="40" fill="#2d3748" rx="4"/>
+  <text x="110" y="328" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">U8</text>
+  <rect x="190" y="302" width="300" height="40" fill="#c6f6d5" stroke="#276749" rx="4"/>
+  <text x="200" y="328" font-size="13" font-weight="700">CP2102N</text>
+  <text x="510" y="328" font-size="13">Qty 0 DNP Fase 1 — flash via DevKit USB</text>
+  <rect x="40" y="350" width="140" height="40" fill="#2d3748" rx="4"/>
+  <text x="110" y="376" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">U11</text>
+  <rect x="190" y="350" width="300" height="40" fill="#c6f6d5" stroke="#276749" rx="4"/>
+  <text x="200" y="376" font-size="13" font-weight="700">PCF8574AP @0x21</text>
+  <text x="510" y="376" font-size="13">HARUS TETAP — input GX/ESTOP/flame/pump/cool · BUKAN DNP</text>
+  <rect x="40" y="398" width="140" height="40" fill="#2d3748" rx="4"/>
+  <text x="110" y="424" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">L1/L4</text>
+  <rect x="190" y="398" width="300" height="40" fill="#c6f6d5" stroke="#276749" rx="4"/>
+  <text x="200" y="424" font-size="13" font-weight="700">—</text>
+  <text x="510" y="424" font-size="13">DIHAPUS dari BOM — inductor ada di modul FIXED</text>
+  <rect x="40" y="446" width="140" height="40" fill="#2d3748" rx="4"/>
+  <text x="110" y="472" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">K_GAS</text>
+  <rect x="190" y="446" width="300" height="40" fill="#c6f6d5" stroke="#276749" rx="4"/>
+  <text x="200" y="472" font-size="13" font-weight="700">Schneider LC1D09BD</text>
+  <text x="510" y="472" font-size="13">HARUS coil 24VDC — BUKAN contactor 12V</text>
+  <rect x="40" y="494" width="140" height="40" fill="#2d3748" rx="4"/>
+  <text x="110" y="520" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">K3/K4</text>
+  <rect x="190" y="494" width="300" height="40" fill="#c6f6d5" stroke="#276749" rx="4"/>
+  <text x="200" y="520" font-size="13" font-weight="700">LC1D09BD 24V</text>
+  <text x="510" y="520" font-size="13">Agitator / cool — coil 24V</text>
+  <rect x="40" y="542" width="140" height="40" fill="#2d3748" rx="4"/>
+  <text x="110" y="568" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">DISP1</text>
+  <rect x="190" y="542" width="300" height="40" fill="#c6f6d5" stroke="#276749" rx="4"/>
+  <text x="200" y="568" font-size="13" font-weight="700">Nextion NX8048…</text>
+  <text x="510" y="568" font-size="13">Capacitive sesuai BOM — jangan ganti sembarangan</text>
+  <text x="40" y="640" font-size="12" fill="#c53030">Salah order paling berbahaya: adjustable buck · K_GAS 12V · DNP U11 · WROOM · SOIC TC · L discrete</text>
+</svg>

@@ -1,0 +1,9 @@
+(footprint "BLOCK_TERM"
+  (layer "F.Cu")
+  (descr "D01E Phoenix-style 2p terminal")
+  (property "Reference" "REF**" (at 0 -6 0) (layer "F.SilkS") (effects (font (size 1 1) (thickness 0.15))))
+  (property "Value" "TERM" (at 0 6 0) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15))))
+  (fp_rect (start -6 -4) (end 6 4) (stroke (width 0.12) (type default)) (fill none) (layer "F.SilkS"))
+  (pad "1" thru_hole rect (at -3 0) (size 3 3) (drill 1.2) (layers "*.Cu" "*.Mask"))
+  (pad "2" thru_hole rect (at 3 0) (size 3 3) (drill 1.2) (layers "*.Cu" "*.Mask"))
+)

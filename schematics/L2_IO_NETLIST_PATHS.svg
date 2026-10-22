@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1080" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1600" height="1080" fill="#faf9f7"/>
+  <text x="800" y="36" text-anchor="middle" font-size="24" font-weight="700">L2 · IO-PWR — Checklist jalur PCB (pad → pad) D03</text>
+  <text x="800" y="60" text-anchor="middle" font-size="13" fill="#4a5568">Board industrial gas · AC / gas / VFD · clearances HV · Fase 1 tidak diganti modul</text>
+
+  <rect x="40" y="85" width="740" height="300" fill="#fff5f5" stroke="#c53030" stroke-width="2" rx="8"/>
+  <text x="60" y="120" font-size="16" font-weight="700" fill="#c53030">A. AC + GAS MASTER</text>
+  <text x="60" y="155" font-size="13">☐ AC → EMI1 → PSU1 / F_MAIN · E-Stop NC#1 di harness</text>
+  <text x="60" y="185" font-size="13">☐ F_MAIN → L_MAINS · N_MAINS / AC_N sesuai desain</text>
+  <text x="60" y="215" font-size="13">☐ K_GAS (LC1D09BD 24V) + GX103 NC seri coil interlock</text>
+  <text x="60" y="245" font-size="13">☐ Q_GAS gate ← GAS_EN (J9.5) · pulldown · D_GAS flyback</text>
+  <text x="60" y="275" font-size="13">☐ Separation AC/gas HV ↔ LV logic ≥ clearance KiCad DRC</text>
+  <text x="60" y="310" font-size="12" fill="#c53030">Coil K_GAS = 24VDC — BUKAN contactor 12V</text>
+  <text x="60" y="340" font-size="12">J_GAS L/N ke katup · PE stud bonding</text>
+
+  <rect x="820" y="85" width="740" height="300" fill="#fffaf0" stroke="#dd6b20" stroke-width="2" rx="8"/>
+  <text x="840" y="120" font-size="16" font-weight="700" fill="#c05621">B. PSU 24V (+ aux 12V)</text>
+  <text x="840" y="155" font-size="13">☐ AC → EMI → PSU1 → +24V_BUS · F_CTRL</text>
+  <text x="840" y="185" font-size="13">☐ +24V → E-Stop NC#2 → coils + J9.1 ke MAIN</text>
+  <text x="840" y="215" font-size="13">☐ PSU GND → GND · J_PE ← PE</text>
+  <text x="840" y="245" font-size="13">☐ PSU2 / +12V_AUX untuk pump cabang (jika dipakai)</text>
+  <text x="840" y="275" font-size="13">☐ J9.1 continuous ke MAIN U3 VIN (+24V_IN)</text>
+  <text x="840" y="310" font-size="12">FG / PE bonding &lt; 0.1 Ω di assembly</text>
+  <text x="840" y="340" font-size="12">MAIN FIXED 5V makan dari +24V — bukan 12V mindset</text>
+
+  <rect x="40" y="410" width="740" height="280" fill="#f0fff4" stroke="#276749" stroke-width="2" rx="8"/>
+  <text x="60" y="445" font-size="16" font-weight="700" fill="#276749">C. DC LOADS / VFD / RELAY</text>
+  <text x="60" y="480" font-size="13">☐ J9.6 VFD_D_RUN → REL_VFD_D · J9.7 VFD_F_RUN → REL_VFD_F</text>
+  <text x="60" y="510" font-size="13">☐ J9.8 AGIT_EN → Q_AGIT / K3 · J9.9 COOL → Q_COOL / K4</text>
+  <text x="60" y="540" font-size="13">☐ J9.10 PUMP_EN → Q_PUMP · flyback dioda dekat coil/FET</text>
+  <text x="60" y="570" font-size="13">☐ J9.11/12 DAC → U20 level-shift → 0–10V VFD AI</text>
+  <text x="60" y="600" font-size="13">☐ Gate pulldown semua EN (boot safe OFF)</text>
+  <text x="60" y="640" font-size="12">Terminal field wiring di tepi · silk cocok harness</text>
+
+  <rect x="820" y="410" width="740" height="280" fill="#ebf8ff" stroke="#2b6cb0" stroke-width="2" rx="8"/>
+  <text x="840" y="445" font-size="16" font-weight="700" fill="#2b6cb0">D. J9 PIN MAP (IO side)</text>
+  <text x="840" y="480" font-size="13">1 +24V_BUS → MAIN · 2 GND · 4 GND_SIG</text>
+  <text x="840" y="510" font-size="13">5 GAS_EN · 6 VFD_D · 7 VFD_F · 8 AGIT</text>
+  <text x="840" y="540" font-size="13">9 COOL_FAN · 10 PUMP · 11 DAC_D · 12 DAC_F</text>
+  <text x="840" y="570" font-size="13">13 +5V sense (opsional) · 3/14–20 NC/spare</text>
+  <text x="840" y="605" font-size="13">Place J9 mirror ke MAIN supaya ribbon pendek lurus</text>
+  <text x="840" y="640" font-size="12" fill="#2b6cb0">Silk J9 pin1 = +24V (segitiga) — SALAH = rusak MAIN</text>
+
+  <rect x="40" y="715" width="1520" height="140" fill="#fffbeb" stroke="#d69e2e" stroke-width="2" rx="8"/>
+  <text x="60" y="750" font-size="15" font-weight="700">E. Urutan layout IO</text>
+  <text x="60" y="780" font-size="13">AC/EMI/PSU → gas contactor · VFD relays · DC loads · J9 tepi ke MAIN</text>
+  <text x="60" y="810" font-size="13">DRC: HV clearance AC/gas ↔ LV · hole · edge · lalu Gerber IO</text>
+  <text x="60" y="840" font-size="13">Prioritas junior: J9.1 +24V continuous ke FIXED 5V · K_GAS LC1D09BD 24V</text>
+
+  <text x="800" y="910" text-anchor="middle" font-size="12" fill="#718096">Ref: D03_Electrical_System_Design.md · gen_pcb_layout.py · pcb_nets.py · BOM K_GAS LC1D09BD</text>
+  <text x="800" y="940" text-anchor="middle" font-size="13" font-weight="700">IO locked Fase 1 — fokus clearances + pin1 +24V ke MAIN</text>
+</svg>

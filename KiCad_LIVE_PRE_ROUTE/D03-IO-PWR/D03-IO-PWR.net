@@ -1,0 +1,1645 @@
+(export
+	(version "E")
+	(design
+		(source "D:\\Hartanzah Manufaktur Indonesia\\Master Design 2026\\Danish 03\\KiCad\\D03-IO-PWR\\D03-IO-PWR.kicad_sch")
+		(date "2026-07-13T07:53:30")
+		(tool "Eeschema 10.0.4")
+		(textvar
+			(name "COMPANY") "Hartanzah")
+		(textvar
+			(name "REV") "1.0")
+		(textvar
+			(name "TITLE") "D03-IO-PWR")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title "D03-IO-PWR")
+				(company "Hartanzah Manufaktur Indonesia")
+				(rev "3.5")
+				(date "2026-07-10")
+				(source "D03-IO-PWR.kicad_sch")
+				(comment
+					(number "1")
+					(value "D01E Danish 01 Electric")
+				)
+				(comment
+					(number "2")
+					(value "ERC-clean block schematic")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "2")
+			(name "/AC Power/")
+			(tstamps "/0ecdbae8-f699-4b85-adb6-87b5c084fe1c/")
+			(title_block
+				(title "D03-IO-PWR / AC Power")
+				(company "Hartanzah Manufaktur Indonesia")
+				(rev "3.5")
+				(date "2026-07-10")
+				(source "ac_power.kicad_sch")
+				(comment
+					(number "1")
+					(value "D01E Danish 01 Electric")
+				)
+				(comment
+					(number "2")
+					(value "ERC-clean block schematic")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "3")
+			(name "/VFD/")
+			(tstamps "/fc0329c6-ac2f-43e7-bed5-a4a421a18d8e/")
+			(title_block
+				(title "D03-IO-PWR / VFD")
+				(company "Hartanzah Manufaktur Indonesia")
+				(rev "3.5")
+				(date "2026-07-10")
+				(source "vfd.kicad_sch")
+				(comment
+					(number "1")
+					(value "D01E Danish 01 Electric")
+				)
+				(comment
+					(number "2")
+					(value "ERC-clean block schematic")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "4")
+			(name "/Gas AC/")
+			(tstamps "/4fabe8a7-0425-4e9f-bcbb-c63d21e2d729/")
+			(title_block
+				(title "D03-IO-PWR / Gas AC")
+				(company "Hartanzah Manufaktur Indonesia")
+				(rev "3.5")
+				(date "2026-07-10")
+				(source "gas_ac.kicad_sch")
+				(comment
+					(number "1")
+					(value "D01E Danish 01 Electric")
+				)
+				(comment
+					(number "2")
+					(value "ERC-clean block schematic")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "5")
+			(name "/DC Loads/")
+			(tstamps "/4ddb968f-917e-42ab-ae04-59d289d07eaa/")
+			(title_block
+				(title "D03-IO-PWR / DC Loads")
+				(company "Hartanzah Manufaktur Indonesia")
+				(rev "3.5")
+				(date "2026-07-10")
+				(source "dc_loads.kicad_sch")
+				(comment
+					(number "1")
+					(value "D01E Danish 01 Electric")
+				)
+				(comment
+					(number "2")
+					(value "ERC-clean block schematic")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "6")
+			(name "/Gas DC/")
+			(tstamps "/e78751f4-2a90-4157-9165-6a29c80f6139/")
+			(title_block
+				(title "D03-IO-PWR / Gas DC")
+				(company "Hartanzah Manufaktur Indonesia")
+				(rev "3.5")
+				(date "2026-07-10")
+				(source "gas_dc.kicad_sch")
+				(comment
+					(number "1")
+					(value "D01E Danish 01 Electric")
+				)
+				(comment
+					(number "2")
+					(value "ERC-clean block schematic")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "7")
+			(name "/IDC J9/")
+			(tstamps "/431e65a9-6460-48f0-bcef-f33e14a460f5/")
+			(title_block
+				(title "D03-IO-PWR / IDC")
+				(company "Hartanzah Manufaktur Indonesia")
+				(rev "3.5")
+				(date "2026-07-10")
+				(source "idc.kicad_sch")
+				(comment
+					(number "1")
+					(value "D01E Danish 01 Electric")
+				)
+				(comment
+					(number "2")
+					(value "ERC-clean block schematic")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "EMI1")
+			(value "FN2070-6-06")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "EMI")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "AC Power")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/ac_power.kicad_sch")
+			)
+			(sheetpath
+				(names "/AC Power/")
+				(tstamps "/0ecdbae8-f699-4b85-adb6-87b5c084fe1c/")
+			)
+			(tstamps "1ec3e0d1-901d-4650-a330-3eae27489c4f")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "F_CTRL")
+			(value "6A 24V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "FUSE")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "AC Power")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/ac_power.kicad_sch")
+			)
+			(sheetpath
+				(names "/AC Power/")
+				(tstamps "/0ecdbae8-f699-4b85-adb6-87b5c084fe1c/")
+			)
+			(tstamps "d9cb3d8e-bc24-4b41-909d-fe8a288511be")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "F_MAIN")
+			(value "iC60N C16")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "FUSE")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "AC Power")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/ac_power.kicad_sch")
+			)
+			(sheetpath
+				(names "/AC Power/")
+				(tstamps "/0ecdbae8-f699-4b85-adb6-87b5c084fe1c/")
+			)
+			(tstamps "5b1a2339-aef0-4316-bc62-c290ce929b39")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "J_PE")
+			(value "PE M4")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "PE_STUD")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "AC Power")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/ac_power.kicad_sch")
+			)
+			(sheetpath
+				(names "/AC Power/")
+				(tstamps "/0ecdbae8-f699-4b85-adb6-87b5c084fe1c/")
+			)
+			(tstamps "3f5471db-7809-4128-8f05-2878fde75184")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "PSU1")
+			(value "HDR-100-24")
+			(fields
+				(field
+					(name "MPN") "HDR-100-24")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "PSU_LRS")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "HDR-100-24")
+			)
+			(property
+				(name "Sheetname")
+				(value "AC Power")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/ac_power.kicad_sch")
+			)
+			(sheetpath
+				(names "/AC Power/")
+				(tstamps "/0ecdbae8-f699-4b85-adb6-87b5c084fe1c/")
+			)
+			(tstamps "e2c69d94-dbe1-4aad-b420-1371c53e43da")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "PSU2")
+			(value "LRS-35-12")
+			(fields
+				(field
+					(name "MPN") "LRS-35-12")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "PSU_LRS")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "LRS-35-12")
+			)
+			(property
+				(name "Sheetname")
+				(value "AC Power")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/ac_power.kicad_sch")
+			)
+			(sheetpath
+				(names "/AC Power/")
+				(tstamps "/0ecdbae8-f699-4b85-adb6-87b5c084fe1c/")
+			)
+			(tstamps "29a25c66-e24d-4b1d-b3fc-b4ef03b01f38")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "J_VFD_D")
+			(value "Drum VFD")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "TERM")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "VFD")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/vfd.kicad_sch")
+			)
+			(sheetpath
+				(names "/VFD/")
+				(tstamps "/fc0329c6-ac2f-43e7-bed5-a4a421a18d8e/")
+			)
+			(tstamps "4252528c-1edd-4887-a873-c9041c61dafa")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "J_VFD_F")
+			(value "Fan VFD")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "TERM")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "VFD")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/vfd.kicad_sch")
+			)
+			(sheetpath
+				(names "/VFD/")
+				(tstamps "/fc0329c6-ac2f-43e7-bed5-a4a421a18d8e/")
+			)
+			(tstamps "11556684-8376-41ac-a239-ee2b42b3a841")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "REL_VFD_D")
+			(value "G5V-2-DC24")
+			(fields
+				(field
+					(name "MPN") "G5V-2-DC24")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "SSR")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "G5V-2-DC24")
+			)
+			(property
+				(name "Sheetname")
+				(value "VFD")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/vfd.kicad_sch")
+			)
+			(sheetpath
+				(names "/VFD/")
+				(tstamps "/fc0329c6-ac2f-43e7-bed5-a4a421a18d8e/")
+			)
+			(tstamps "f6e348ba-51dd-49df-b007-5f8184da1af3")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "REL_VFD_F")
+			(value "G5V-2-DC24")
+			(fields
+				(field
+					(name "MPN") "G5V-2-DC24")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "SSR")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "G5V-2-DC24")
+			)
+			(property
+				(name "Sheetname")
+				(value "VFD")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/vfd.kicad_sch")
+			)
+			(sheetpath
+				(names "/VFD/")
+				(tstamps "/fc0329c6-ac2f-43e7-bed5-a4a421a18d8e/")
+			)
+			(tstamps "fbbf1f54-5ce4-4d57-bd68-370a693c6380")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U20")
+			(value "MCP6002 x2")
+			(fields
+				(field
+					(name "MPN") "MCP6002-I/SN")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "TC4427")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "MCP6002-I/SN")
+			)
+			(property
+				(name "Sheetname")
+				(value "VFD")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/vfd.kicad_sch")
+			)
+			(sheetpath
+				(names "/VFD/")
+				(tstamps "/fc0329c6-ac2f-43e7-bed5-a4a421a18d8e/")
+			)
+			(tstamps "1e3299f9-8438-40dc-898b-55c03872f9d8")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "J_GAS")
+			(value "Gas OUT")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "TERM")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas AC")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/gas_ac.kicad_sch")
+			)
+			(sheetpath
+				(names "/Gas AC/")
+				(tstamps "/4fabe8a7-0425-4e9f-bcbb-c63d21e2d729/")
+			)
+			(tstamps "91798f1a-fce9-41b6-90bf-039cf78823d3")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "K_GAS")
+			(value "LC1D09BD")
+			(fields
+				(field
+					(name "MPN") "LC1D09BD")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "CONTACTOR")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "LC1D09BD")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas AC")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/gas_ac.kicad_sch")
+			)
+			(sheetpath
+				(names "/Gas AC/")
+				(tstamps "/4fabe8a7-0425-4e9f-bcbb-c63d21e2d729/")
+			)
+			(tstamps "94e7f2e7-2537-480e-a821-f519f5ee347f")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "J3")
+			(value "Agitator")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "TERM")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "DC Loads")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/dc_loads.kicad_sch")
+			)
+			(sheetpath
+				(names "/DC Loads/")
+				(tstamps "/4ddb968f-917e-42ab-ae04-59d289d07eaa/")
+			)
+			(tstamps "b9bff8d3-356d-4e6b-87e5-600004dc0ac0")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "J4")
+			(value "Cool fan")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "TERM")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "DC Loads")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/dc_loads.kicad_sch")
+			)
+			(sheetpath
+				(names "/DC Loads/")
+				(tstamps "/4ddb968f-917e-42ab-ae04-59d289d07eaa/")
+			)
+			(tstamps "172315c7-2cf6-445d-a9b8-db82b5c83a97")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "J8")
+			(value "Pump 12V")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "TERM")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "DC Loads")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/dc_loads.kicad_sch")
+			)
+			(sheetpath
+				(names "/DC Loads/")
+				(tstamps "/4ddb968f-917e-42ab-ae04-59d289d07eaa/")
+			)
+			(tstamps "c491143a-43e7-4552-a330-2da55622454a")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "J12")
+			(value "12V panel lamp")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "TERM")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "DC Loads")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/dc_loads.kicad_sch")
+			)
+			(sheetpath
+				(names "/DC Loads/")
+				(tstamps "/4ddb968f-917e-42ab-ae04-59d289d07eaa/")
+			)
+			(tstamps "a5a0849a-44ea-4fad-8a70-d07819672598")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "K3")
+			(value "LC1D09BD Agit")
+			(fields
+				(field
+					(name "MPN") "LC1D09BD")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "CONTACTOR")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "LC1D09BD")
+			)
+			(property
+				(name "Sheetname")
+				(value "DC Loads")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/dc_loads.kicad_sch")
+			)
+			(sheetpath
+				(names "/DC Loads/")
+				(tstamps "/4ddb968f-917e-42ab-ae04-59d289d07eaa/")
+			)
+			(tstamps "75416583-83ec-4503-b45e-924fa682f844")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "K4")
+			(value "LC1D09BD Cool")
+			(fields
+				(field
+					(name "MPN") "LC1D09BD")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "CONTACTOR")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "LC1D09BD")
+			)
+			(property
+				(name "Sheetname")
+				(value "DC Loads")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/dc_loads.kicad_sch")
+			)
+			(sheetpath
+				(names "/DC Loads/")
+				(tstamps "/4ddb968f-917e-42ab-ae04-59d289d07eaa/")
+			)
+			(tstamps "b100d752-390f-47e7-911a-95323cb26d13")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "Q_AGIT")
+			(value "IRLZ44NPBF")
+			(fields
+				(field
+					(name "MPN") "IRLZ44NPBF")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "MOSFET_N")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "IRLZ44NPBF")
+			)
+			(property
+				(name "Sheetname")
+				(value "DC Loads")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/dc_loads.kicad_sch")
+			)
+			(sheetpath
+				(names "/DC Loads/")
+				(tstamps "/4ddb968f-917e-42ab-ae04-59d289d07eaa/")
+			)
+			(tstamps "314eca8e-7d9c-4a57-8fb8-cc33ed562d71")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "Q_COOL")
+			(value "IRLZ44NPBF")
+			(fields
+				(field
+					(name "MPN") "IRLZ44NPBF")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "MOSFET_N")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "IRLZ44NPBF")
+			)
+			(property
+				(name "Sheetname")
+				(value "DC Loads")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/dc_loads.kicad_sch")
+			)
+			(sheetpath
+				(names "/DC Loads/")
+				(tstamps "/4ddb968f-917e-42ab-ae04-59d289d07eaa/")
+			)
+			(tstamps "49a69ff3-52f1-40f5-8624-c595ddc23cde")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "Q_PUMP")
+			(value "IRLZ44NPBF")
+			(fields
+				(field
+					(name "MPN") "IRLZ44NPBF")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "MOSFET_N")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "IRLZ44NPBF")
+			)
+			(property
+				(name "Sheetname")
+				(value "DC Loads")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/dc_loads.kicad_sch")
+			)
+			(sheetpath
+				(names "/DC Loads/")
+				(tstamps "/4ddb968f-917e-42ab-ae04-59d289d07eaa/")
+			)
+			(tstamps "137fbc7a-1d01-470e-918d-5b386481f995")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "D_GAS")
+			(value "1N4007")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "DIODE")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas DC")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/gas_dc.kicad_sch")
+			)
+			(sheetpath
+				(names "/Gas DC/")
+				(tstamps "/e78751f4-2a90-4157-9165-6a29c80f6139/")
+			)
+			(tstamps "c39bc677-77f0-4d43-b295-6c76dd6ca19b")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "Q_GAS")
+			(value "IRLZ44NPBF")
+			(fields
+				(field
+					(name "MPN") "IRLZ44NPBF")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "MOSFET_N")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "IRLZ44NPBF")
+			)
+			(property
+				(name "Sheetname")
+				(value "Gas DC")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/gas_dc.kicad_sch")
+			)
+			(sheetpath
+				(names "/Gas DC/")
+				(tstamps "/e78751f4-2a90-4157-9165-6a29c80f6139/")
+			)
+			(tstamps "81a9c0ce-9f27-42b4-a870-91f4529e645e")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "J9")
+			(value "IDC 2x10")
+			(footprint "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical")
+			(fields
+				(field
+					(name "Footprint") "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "CONN_HDR")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "IDC J9")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/idc.kicad_sch")
+			)
+			(sheetpath
+				(names "/IDC J9/")
+				(tstamps "/431e65a9-6460-48f0-bcef-f33e14a460f5/")
+			)
+			(tstamps "c0671527-62e0-4249-9a33-3cb8c0391885")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "D01E")
+			(part "CONN_HDR")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Header")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "CONTACTOR")
+			(fields
+				(field
+					(name "Reference") "K")
+				(field
+					(name "Value") "LC1D25JD")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "DIODE")
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "Diode")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "EMI")
+			(fields
+				(field
+					(name "Reference") "EMI")
+				(field
+					(name "Value") "FN2070-6-06")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "FUSE")
+			(fields
+				(field
+					(name "Reference") "F")
+				(field
+					(name "Value") "Fuse")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "MOSFET_N")
+			(fields
+				(field
+					(name "Reference") "Q")
+				(field
+					(name "Value") "MOSFET N-ch")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "NET_PORT")
+			(fields
+				(field
+					(name "Reference") "NP")
+				(field
+					(name "Value") "NET")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "PE_STUD")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "PE Stud")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "PSU_LRS")
+			(fields
+				(field
+					(name "Reference") "PSU")
+				(field
+					(name "Value") "LRS-150-12")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "SSR")
+			(fields
+				(field
+					(name "Reference") "SSR")
+				(field
+					(name "Value") "D2440")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "TC4427")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "TC4427A")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "TERM")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Phoenix Terminal")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "D01E")
+			(uri "${KIPRJMOD}/D01E.kicad_sym")
+		)
+	)
+	(nets)
+)

@@ -1,0 +1,6 @@
+.vscode/
+*.bak
+*.bak_*
+*.kicad_prl
+~*
+*-backups/

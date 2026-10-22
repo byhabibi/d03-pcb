@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 880" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1280" height="880" fill="#faf9f7"/>
+  <text x="40" y="40" font-size="22" font-weight="700">L3 · ROUTING PRIORITY D03 (urutan wajib — jangan diacak)</text>
+  <text x="40" y="68" font-size="13" fill="#c53030">+24V → +5V → GND → SPI → TC → UART → I2C → GPIO → Silk. Loncat = revisi mahal.</text>
+  
+  <circle cx="80" cy="124" r="24" fill="#2b6cb0"/>
+  <text x="80" y="131" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">1</text>
+  <rect x="120" y="100" width="1040" height="72" fill="#fff" stroke="#a0aec0" rx="6"/>
+  <text x="140" y="128" font-size="16" font-weight="700">+24V_IN</text>
+  <text x="140" y="152" font-size="13" fill="#4a5568">Lebar ≥0.80 mm · J9.1 → U3 VIN · dulu sebelum sinyal</text>
+  <circle cx="80" cy="212" r="24" fill="#2b6cb0"/>
+  <text x="80" y="219" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">2</text>
+  <rect x="120" y="188" width="1040" height="72" fill="#fff" stroke="#a0aec0" rx="6"/>
+  <text x="140" y="216" font-size="16" font-weight="700">+5V_SYS</text>
+  <text x="140" y="240" font-size="13" fill="#4a5568">U3 VOUT → DevKit L19 + U7/U9/U10/U11/U12/U13 · decoupling dekat pin</text>
+  <circle cx="80" cy="300" r="24" fill="#2b6cb0"/>
+  <text x="80" y="307" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">3</text>
+  <rect x="120" y="276" width="1040" height="72" fill="#fff" stroke="#a0aec0" rx="6"/>
+  <text x="140" y="304" font-size="16" font-weight="700">GND plane + stitch vias</text>
+  <text x="140" y="328" font-size="13" fill="#4a5568">Polygon full · strategy L3_12 · baru boleh sinyal panjang</text>
+  <circle cx="80" cy="388" r="24" fill="#2b6cb0"/>
+  <text x="80" y="395" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">4</text>
+  <rect x="120" y="364" width="1040" height="72" fill="#fff" stroke="#a0aec0" rx="6"/>
+  <text x="140" y="392" font-size="16" font-weight="700">SPI TC ×3</text>
+  <text x="140" y="416" font-size="13" fill="#4a5568">DevKit kanan → U4/U5/U6 · pendek · lurus · 0 via ideal · jauh buck</text>
+  <circle cx="80" cy="476" r="24" fill="#2b6cb0"/>
+  <text x="80" y="483" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">5</text>
+  <rect x="120" y="452" width="1040" height="72" fill="#fff" stroke="#a0aec0" rx="6"/>
+  <text x="140" y="480" font-size="16" font-weight="700">Thermocouple / analog</text>
+  <text x="140" y="504" font-size="13" fill="#4a5568">J1/J2/J3 dekat modul · POT/MQ6 jauh PWM · TIDAK lewat buck</text>
+  <circle cx="80" cy="564" r="24" fill="#2b6cb0"/>
+  <text x="80" y="571" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">6</text>
+  <rect x="120" y="540" width="1040" height="72" fill="#fff" stroke="#a0aec0" rx="6"/>
+  <text x="140" y="568" font-size="16" font-weight="700">UART / RS485</text>
+  <text x="140" y="592" font-size="13" fill="#4a5568">Nextion · DFPlayer · MAX3485 · boleh setelah SPI bersih</text>
+  <circle cx="80" cy="652" r="24" fill="#2b6cb0"/>
+  <text x="80" y="659" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">7</text>
+  <rect x="120" y="628" width="1040" height="72" fill="#fff" stroke="#a0aec0" rx="6"/>
+  <text x="140" y="656" font-size="16" font-weight="700">I2C + GPIO/PCF</text>
+  <text x="140" y="680" font-size="13" fill="#4a5568">U10/U11/DAC · J9 gas/VFD · SERVO · jauh SPI bila bisa</text>
+  <circle cx="80" cy="740" r="24" fill="#2b6cb0"/>
+  <text x="80" y="747" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">8</text>
+  <rect x="120" y="716" width="1040" height="72" fill="#fff" stroke="#a0aec0" rx="6"/>
+  <text x="140" y="744" font-size="16" font-weight="700">Silkscreen terakhir</text>
+  <text x="140" y="768" font-size="13" fill="#4a5568">Setelah copper final · pin1 · FIXED/DevKit/TC×3 · jangan tutup pad</text>
+</svg>

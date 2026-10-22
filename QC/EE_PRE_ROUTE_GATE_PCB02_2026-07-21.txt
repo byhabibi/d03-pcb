@@ -1,0 +1,66 @@
+# D03 PCB-02 IO-PWR — SENIOR EE PRE-ROUTE GATE (POST-FIX)
+# Date: 2026-07-21
+# Board: KiCad_LIVE_PRE_ROUTE/D03-IO-PWR/D03-IO-PWR.kicad_pcb
+
+## VERDICT: GO ROUTE — production placement ready
+FAIL_CRITICAL = 0
+FAIL_HIGH = 0
+
+Engineer may full-route PCB-02. Do not change seats/nets without re-audit.
+
+---
+
+## Fixes applied (was NO-GO)
+
+| ID | Issue | Fix |
+|----|-------|-----|
+| B1 | IRLZ44N (TO-220) on SOT-23 | Silk/BOM → **AO3400** SOT-23 ×6 |
+| B2 | MCP6002 VDD=+24V | **LM358**, VDD=**+12V_AUX** |
+| B3 | No 0–10V / IN− floating | Gain **Rf=20k / Rg=10k** (R_FA/R_GA/R_FB/R_GB); IN− nets wired |
+| B4 | J_VFD = +24V/GND | J_VFD = **AI + GND**; REL LOAD/AC = **dry FOR** nets |
+| C1 | Missing flyback VFD_F / K4 | **D5**, **D6** 1N5819 |
+| C2 | No VFD gate PD | **R_VFD_D_G**, **R_VFD_F_G** 10k |
+| C3 | R_G1 pull-up to +24V | **Series** GAS_EN→GATE_GAS + R_G2 PD |
+| FW | Active-low vs N-MOSFET | **Active-high** load bits; boot shadow=DE only |
+
+---
+
+## Auto gates (re-run 2026-07-21)
+
+| Gate | Result |
+|------|--------|
+| Placement pad-nets | **GO ROUTE** — IO pads=137 fail=0 tracks=0 |
+| BOM PCB-02 tally | **PASS 100%** — missing/value/pad = none |
+| J9 pins 5–12 MAIN↔IO | **PASS** |
+| Firmware U10 P0–P5 ↔ J9 ↔ Q_* | **PASS** (active-high) |
+
+---
+
+## Production part summary (PCB-02 SMT/THT)
+
+| Ref | Part | Note |
+|-----|------|------|
+| Q_* ×6 | AO3400 | Logic-level SOT-23 coil/pump drivers |
+| U20 | LM358 | Dual; +12V; gain≈3 → ~9.9 V @ 3.3 V DAC |
+| D2 | SS34 | VFD_D flyback |
+| D3–D6 | 1N5819 | AGIT / PUMP / VFD_F / COOL |
+| D_GAS | 1N4007 | K_GAS |
+| R_FA/R_FB | 20k | Feedback |
+| R_GA/R_GB | 10k | Ground gain |
+
+---
+
+## Field wiring reminder (post-route)
+
+1. `J_VFD_D.1` → VFD1 AI, `.2` → AI GND  
+2. `J_VFD_F.1` → VFD2 AI, `.2` → AI GND  
+3. `REL_VFD_D` LOAD↔AC → VFD1 FOR↔COM (dry)  
+4. `REL_VFD_F` LOAD↔AC → VFD2 FOR↔COM (dry)  
+
+Firmware: flash build with `pcf8574_io.cpp` active-high drivers (boot-safe).
+
+---
+
+## Next step
+
+**Route copper** on `D03-IO-PWR.kicad_pcb`, then DRC → Gerber.

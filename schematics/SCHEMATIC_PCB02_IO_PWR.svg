@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1180" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1600" height="1180" fill="#faf9f7"/>
+  <defs>
+    <marker id="arr2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#2d3748"/>
+    </marker>
+  </defs>
+
+  <text x="800" y="42" text-anchor="middle" font-size="28" font-weight="700" fill="#1a202c">PCB-02 · D03-IO-PWR</text>
+  <text x="800" y="72" text-anchor="middle" font-size="15" fill="#4a5568">Schematic blok industrial gas — Fase 1 LOCKED · PSU 24V · VFD · kontaktor</text>
+
+  <rect x="40" y="95" width="1520" height="48" fill="#fff5f5" stroke="#fc8181" rx="6"/>
+  <text x="800" y="125" text-anchor="middle" font-size="14" font-weight="700" fill="#c53030">Fase 1: board ini TETAP diskrit industrial — jangan diganti ke modul</text>
+
+  <!-- AC / gas path -->
+  <rect x="40" y="170" width="740" height="300" fill="#fff5f5" stroke="#c53030" stroke-width="2.5" rx="10"/>
+  <text x="410" y="205" text-anchor="middle" font-size="16" font-weight="700" fill="#c53030">JALUR AC 220V · GAS / MOTOR</text>
+
+  <rect x="70" y="230" width="100" height="60" fill="#fed7d7" stroke="#c53030" stroke-width="2" rx="6"/>
+  <text x="120" y="255" text-anchor="middle" font-size="12" font-weight="700">F_MAIN</text>
+  <text x="120" y="275" text-anchor="middle" font-size="11">MCB</text>
+
+  <line x1="170" y1="260" x2="210" y2="260" stroke="#2d3748" stroke-width="2.5" marker-end="url(#arr2)"/>
+
+  <rect x="210" y="230" width="110" height="60" fill="#fed7d7" stroke="#c53030" stroke-width="2" rx="6"/>
+  <text x="265" y="255" text-anchor="middle" font-size="12" font-weight="700">E-Stop</text>
+  <text x="265" y="275" text-anchor="middle" font-size="11">2NC</text>
+
+  <line x1="320" y1="260" x2="360" y2="260" stroke="#2d3748" stroke-width="2.5" marker-end="url(#arr2)"/>
+
+  <rect x="360" y="220" width="140" height="80" fill="#feb2b2" stroke="#9b2c2c" stroke-width="2.5" rx="6"/>
+  <text x="430" y="250" text-anchor="middle" font-size="13" font-weight="700">K_GAS</text>
+  <text x="430" y="270" text-anchor="middle" font-size="11">LC1D09BD</text>
+  <text x="430" y="288" text-anchor="middle" font-size="10">coil 24VDC</text>
+
+  <line x1="500" y1="260" x2="540" y2="260" stroke="#2d3748" stroke-width="2.5" marker-end="url(#arr2)"/>
+
+  <rect x="540" y="220" width="100" height="80" fill="#feb2b2" stroke="#9b2c2c" stroke-width="2.5" rx="6"/>
+  <text x="590" y="255" text-anchor="middle" font-size="13" font-weight="700">K3</text>
+  <text x="590" y="275" text-anchor="middle" font-size="11">agitator</text>
+
+  <line x1="640" y1="260" x2="680" y2="260" stroke="#2d3748" stroke-width="2.5" marker-end="url(#arr2)"/>
+
+  <rect x="680" y="220" width="80" height="80" fill="#feb2b2" stroke="#9b2c2c" stroke-width="2.5" rx="6"/>
+  <text x="720" y="255" text-anchor="middle" font-size="13" font-weight="700">K4</text>
+  <text x="720" y="275" text-anchor="middle" font-size="11">cool</text>
+
+  <text x="70" y="340" font-size="13" font-weight="700">Driver coil gas:</text>
+  <rect x="70" y="355" width="200" height="70" fill="#feebc8" stroke="#c05621" stroke-width="2" rx="6"/>
+  <text x="170" y="385" text-anchor="middle" font-size="13" font-weight="700">Q_GAS IRLZ44N</text>
+  <text x="170" y="408" text-anchor="middle" font-size="11">+ D_GAS flyback</text>
+
+  <text x="300" y="385" font-size="12">← GAS_EN dari MAIN (J9 pin5 / U10 P0)</text>
+  <text x="300" y="410" font-size="12" fill="#c53030">GX103 NC seri coil K_GAS — hardware interlock</text>
+  <text x="300" y="435" font-size="12">E-Stop NC putus AC + bus coil 24V</text>
+
+  <!-- PSU path -->
+  <rect x="810" y="170" width="750" height="300" fill="#fffaf0" stroke="#dd6b20" stroke-width="2.5" rx="10"/>
+  <text x="1185" y="205" text-anchor="middle" font-size="16" font-weight="700" fill="#c05621">JALUR PSU 24V / 12V</text>
+
+  <rect x="850" y="235" width="130" height="80" fill="#fbd38d" stroke="#c05621" stroke-width="2.5" rx="6"/>
+  <text x="915" y="265" text-anchor="middle" font-size="13" font-weight="700">PSU1</text>
+  <text x="915" y="285" text-anchor="middle" font-size="12">HDR-100-24</text>
+  <text x="915" y="302" text-anchor="middle" font-size="11">+24V_BUS</text>
+
+  <line x1="980" y1="275" x2="1020" y2="275" stroke="#2d3748" stroke-width="2.5" marker-end="url(#arr2)"/>
+
+  <rect x="1020" y="235" width="130" height="80" fill="#fbd38d" stroke="#c05621" stroke-width="2.5" rx="6"/>
+  <text x="1085" y="265" text-anchor="middle" font-size="13" font-weight="700">PSU2</text>
+  <text x="1085" y="285" text-anchor="middle" font-size="12">LRS-35-12</text>
+  <text x="1085" y="302" text-anchor="middle" font-size="11">+12V_AUX</text>
+
+  <line x1="1150" y1="275" x2="1190" y2="275" stroke="#2d3748" stroke-width="2.5" marker-end="url(#arr2)"/>
+
+  <rect x="1190" y="245" width="120" height="60" fill="#feebc8" stroke="#c05621" stroke-width="2" rx="6"/>
+  <text x="1250" y="275" text-anchor="middle" font-size="12" font-weight="700">F_24V</text>
+  <text x="1250" y="295" text-anchor="middle" font-size="11">fuse bus</text>
+
+  <text x="850" y="360" font-size="13" font-weight="700">Dari +24V_BUS juga ke:</text>
+  <text x="850" y="385" font-size="13">• J9 pin1 → MAIN U3_MOD FIXED 5V VIN</text>
+  <text x="850" y="410" font-size="13">• Coil K_GAS / K3 / K4 (24V) via E-Stop NC</text>
+  <text x="850" y="435" font-size="13">• Q_* MOSFET low-side drivers dari J9</text>
+
+  <!-- VFD / loads -->
+  <rect x="40" y="500" width="1100" height="280" fill="#f0fff4" stroke="#276749" stroke-width="2.5" rx="10"/>
+  <text x="590" y="535" text-anchor="middle" font-size="16" font-weight="700" fill="#276749">VFD / DAC / BEBAN (dari J9)</text>
+
+  <rect x="70" y="560" width="300" height="180" fill="#c6f6d5" stroke="#276749" stroke-width="2" rx="8"/>
+  <text x="220" y="595" text-anchor="middle" font-size="14" font-weight="700">VFD RUN</text>
+  <text x="90" y="625" font-size="12">REL_VFD_D ← J9.6</text>
+  <text x="90" y="650" font-size="12">REL_VFD_F ← J9.7</text>
+  <text x="90" y="675" font-size="12">VFD1 AT1-2200 drum</text>
+  <text x="90" y="700" font-size="12" font-weight="700">VFD2 AT1-1500 fan</text>
+
+  <rect x="400" y="560" width="300" height="180" fill="#fbb6ce" stroke="#d53f8c" stroke-width="2" rx="8"/>
+  <text x="550" y="595" text-anchor="middle" font-size="14" font-weight="700">0–10V ANALOG</text>
+  <text x="420" y="625" font-size="12">U20 MCP6002 buffer</text>
+  <text x="420" y="650" font-size="12">In: DAC_D/F J9.11/12</text>
+  <text x="420" y="675" font-size="12">Out: AI VFD 0–10V</text>
+  <text x="420" y="705" font-size="12" font-weight="700">dari MAIN U12/U13</text>
+
+  <rect x="730" y="560" width="370" height="180" fill="#c6f6d5" stroke="#276749" stroke-width="2" rx="8"/>
+  <text x="915" y="595" text-anchor="middle" font-size="14" font-weight="700">AGIT / COOL / PUMP</text>
+  <text x="750" y="625" font-size="12">Q_* IRLZ44N dari J9.8–10</text>
+  <text x="750" y="650" font-size="12">AGIT → K3 · COOL → K4</text>
+  <text x="750" y="675" font-size="12">PUMP → valve/pump out</text>
+  <text x="750" y="705" font-size="12" font-weight="700">VX / GX103 gas safety</text>
+
+  <!-- J9 + PE -->
+  <rect x="1170" y="500" width="390" height="280" fill="#ebf8ff" stroke="#2b6cb0" stroke-width="2.5" rx="10"/>
+  <text x="1365" y="535" text-anchor="middle" font-size="15" font-weight="700" fill="#2b6cb0">J9 KE MAIN + PE</text>
+  <text x="1195" y="575" font-size="13" font-weight="700">J9 IDC 2×10 (D03)</text>
+  <text x="1195" y="600" font-size="12">1 +24V → MAIN FIXED 5V</text>
+  <text x="1195" y="620" font-size="12">2 GND_PWR · 4 GND_SIG</text>
+  <text x="1195" y="640" font-size="12">5 GAS · 6 VFD_D · 7 VFD_F</text>
+  <text x="1195" y="660" font-size="12">8 AGIT · 9 COOL · 10 PUMP</text>
+  <text x="1195" y="680" font-size="12">11 DAC_D · 12 DAC_F</text>
+  <text x="1195" y="720" font-size="13" font-weight="700">J_PE stud M4</text>
+  <text x="1195" y="745" font-size="12">Earth bond &lt; 0.1 Ω</text>
+
+  <!-- Safety footer -->
+  <rect x="40" y="810" width="1520" height="320" fill="#ffffff" stroke="#a0aec0" stroke-width="2" rx="10"/>
+  <text x="800" y="850" text-anchor="middle" font-size="16" font-weight="700">Safety ringkas (jangan dilanggar)</text>
+  <text x="80" y="890" font-size="14">1. E-Stop 2NC: NC#1 putus AC · NC#2 putus bus coil 24V — hardware, bukan software saja</text>
+  <text x="80" y="925" font-size="14">2. Gas: F_MAIN → E-Stop → K_GAS (LC1D09BD 24V) · GX103 NC seri coil · Q_GAS dari MAIN GAS_EN</text>
+  <text x="80" y="960" font-size="14">3. VFD: REL_VFD run + U20 0–10V dari DAC MAIN · PE chassis wajib</text>
+  <text x="80" y="995" font-size="14">4. Fase 1: tidak diganti ke power-module — industrial path locked</text>
+  <text x="80" y="1030" font-size="13" fill="#718096">Sumber: D03_Electrical_System_Design.md v1.5 · D03_Module_Optimization_Fase1.md · KiCad D03-IO-PWR</text>
+  <text x="80" y="1070" font-size="13" fill="#c53030" font-weight="700">Blueprint: D03_ENGINEERING_BLUEPRINT.svg · J9 pin1 = +24V (bukan 12V seperti D01E)</text>
+</svg>

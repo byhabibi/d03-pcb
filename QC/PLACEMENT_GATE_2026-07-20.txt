@@ -1,0 +1,33 @@
+# D03 PCB PLACEMENT GATE — seats + pad-nets
+# Date: 2026-07-21
+
+## VERDICT: GO ROUTE
+FAIL_COUNT = 0
+
+Scope: KiCad_LIVE_PRE_ROUTE placement only (0 DRC required pre-route).
+Routing: engineer — after this gate.
+
+## MAIN-CTRL
+| sha256[0:16] | `1874b60d7de27e95` |
+| footprints | 69 |
+| copper tracks | 0 |
+| pads checked | 259 |
+| pad-net FAIL | 0 |
+| value/seat FAIL | 0 |
+| missing critical | none |
+
+## IO-PWR
+| sha256[0:16] | `e66cc1c374d56868` |
+| footprints | 54 |
+| copper tracks | 0 | (clear partial copper if not intentional)
+| pads checked | 153 |
+| pad-net FAIL | 0 |
+| value/seat FAIL | 0 |
+| missing critical | none |
+
+## J9 MAIN↔IO pins 5–12
+PASS
+
+## Forbidden legacy
+none
+

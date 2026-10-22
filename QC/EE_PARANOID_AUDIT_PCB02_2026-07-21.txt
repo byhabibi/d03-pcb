@@ -1,0 +1,78 @@
+# D03 PCB-02 PARANOID EE AUDIT
+# Date: 2026-07-21
+# PCB sha256: e66cc1c374d568683ab9be30b7fd53763eb7de4b30c5686a3ee2a8f2a1b2de30
+# Footprints: 54 | active: 50 | BOM qty>0: 50
+# Tracks: 0 | Root vias: 0 | BOM non-ASCII bytes: 0
+
+## VERDICT: PASS 100% — GO ROUTE (PARANOID)
+FAIL_COUNT = 0
+FAILS = none
+NOTES = none
+
+## Integrity
+- BOM 02<->03 identical: True
+- FW_VERSION_BCD: 0x010E
+- PCF8574_OUT_ADDR: 0x20
+- Active-high drivers: True
+
+## Pad-nets checked: 151
+
+## Firmware chain (config.h -> J9 PCB -> MOSFET gate)
+| Define | Pin | J9 | Net | MOSFET.gate | OK |
+|--------|-----|----|-----|-------------|----|
+| PCF_OUT_GAS=0 | 0 | 5=GAS_EN | Q_GAS.1=GATE_GAS | True |
+| PCF_OUT_VFD_D=1 | 1 | 6=VFD_D_RUN | Q_VFD_D.1=GATE_VFD_D | True |
+| PCF_OUT_VFD_F=2 | 2 | 7=VFD_F_RUN | Q_VFD_F.1=GATE_VFD_F | True |
+| PCF_OUT_AGIT=3 | 3 | 8=AGIT_EN | Q_AGIT.1=GATE_AGIT | True |
+| PCF_OUT_COOL=4 | 4 | 9=COOL_FAN_EN | Q_COOL.1=GATE_COOL | True |
+| PCF_OUT_PUMP=5 | 5 | 10=PUMP_EN | Q_PUMP.1=GATE_PUMP | True |
+
+## Critical part evidence
+- C18: val='100nF' fp=Capacitor_SMD:C_0603_1608Metric BOM_PN='0603 100nF' nets={'1': '+24V_BUS', '2': 'GND'}
+- C19: val='100nF' fp=Capacitor_SMD:C_0603_1608Metric BOM_PN='0603 100nF' nets={'1': '+24V_BUS', '2': 'GND'}
+- C20: val='10uF' fp=Capacitor_SMD:C_0805_2012Metric BOM_PN='0805 10uF' nets={'1': '+24V_BUS', '2': 'GND'}
+- D2: val='SS34' fp=Diode_SMD:D_SMA BOM_PN='SS34' nets={'1': '+24V_BUS', '2': 'VFD_D_RUN'}
+- D3: val='1N5819' fp=Diode_SMD:D_SOD-123 BOM_PN='1N5819' nets={'1': '+24V_BUS', '2': 'AGIT_EN'}
+- D4: val='1N5819' fp=Diode_SMD:D_SOD-123 BOM_PN='1N5819' nets={'1': '+12V_AUX', '2': 'PUMP_EN'}
+- D5: val='1N5819' fp=Diode_SMD:D_SOD-123 BOM_PN='1N5819' nets={'1': '+24V_BUS', '2': 'VFD_F_RUN'}
+- D6: val='1N5819' fp=Diode_SMD:D_SOD-123 BOM_PN='1N5819' nets={'1': '+24V_BUS', '2': 'COOL_FAN_EN'}
+- D_GAS: val='1N4007' fp=Diode_SMD:D_SOD-123 BOM_PN='1N4007' nets={'1': '+24V_BUS', '2': 'K_GAS_COIL+'}
+- EMI1: val='FN2090' fp=D03:BLOCK_EMI BOM_PN='FN2090-6-06' nets={'L': 'L_MAINS', 'N': 'AC_N', 'PE': 'PE'}
+- J9: val='IDC 2x10' fp=Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical BOM_PN='IDC-20' nets={'1': '+24V_BUS', '2': 'GND', '3': 'NC', '4': 'GND', '5': 'GAS_EN', '6': 'VFD_D_RUN', '7': 'VFD_F_RUN', '8': 'AGIT_EN', '9': 'COOL_FAN_EN', '10': 'PUMP_EN', '11': 'DAC_D_OUT', '12': 'DAC_F_OUT', '13': '+5V_SENSE', '14': 'NC', '15': 'NC', '16': 'NC', '17': 'NC', '18': 'NC', '19': 'NC', '20': 'NC'}
+- J_VFD_D: val='VFD1 AI/GND' fp=D03:BLOCK_TERM BOM_PN='1757018' nets={'1': 'VFD1_AI', '2': 'GND'}
+- J_VFD_F: val='VFD2 AI/GND' fp=D03:BLOCK_TERM BOM_PN='1757018' nets={'1': 'VFD2_AI', '2': 'GND'}
+- K3: val='LC1D09BD agit' fp=D03:BLOCK_CONTACTOR BOM_PN='LC1D09BD' nets={'A1': 'L_GAS', 'A2': 'L_GAS', 'COIL+': '+24V_BUS', 'COIL-': 'AGIT_EN'}
+- K4: val='LC1D09BD cool' fp=D03:BLOCK_CONTACTOR BOM_PN='LC1D09BD' nets={'A1': 'L_GAS', 'A2': 'L_GAS', 'COIL+': '+24V_BUS', 'COIL-': 'COOL_FAN_EN'}
+- K_GAS: val='LC1D09BD gas' fp=D03:BLOCK_CONTACTOR BOM_PN='LC1D09BD' nets={'A1': 'L_GAS', 'A2': 'L_GAS', 'COIL+': '+24V_BUS', 'COIL-': 'K_GAS_COIL+'}
+- PSU1: val='HDR-100-24' fp=D03:BLOCK_PSU BOM_PN='HDR-100-24' nets={'AC_L': 'L_MAINS', 'AC_N': 'AC_N', 'PE': 'PE', '+12V': '+24V_BUS', 'GND': 'GND'}
+- PSU2: val='LRS-35-12' fp=D03:BLOCK_PSU BOM_PN='LRS-35-12' nets={'AC_L': 'L_MAINS', 'AC_N': 'AC_N', 'PE': 'PE', '+12V': '+12V_AUX', 'GND': 'GND'}
+- Q_AGIT: val='AO3400' fp=Package_TO_SOT_SMD:SOT-23 BOM_PN='AO3400' nets={'1': 'GATE_AGIT', '2': 'GND', '3': 'AGIT_EN'}
+- Q_COOL: val='AO3400' fp=Package_TO_SOT_SMD:SOT-23 BOM_PN='AO3400' nets={'1': 'GATE_COOL', '2': 'GND', '3': 'COOL_FAN_EN'}
+- Q_GAS: val='AO3400' fp=Package_TO_SOT_SMD:SOT-23 BOM_PN='AO3400' nets={'1': 'GATE_GAS', '2': 'GND', '3': 'K_GAS_COIL+'}
+- Q_PUMP: val='AO3400' fp=Package_TO_SOT_SMD:SOT-23 BOM_PN='AO3400' nets={'1': 'GATE_PUMP', '2': 'GND', '3': 'PUMP_EN'}
+- Q_VFD_D: val='AO3400 VFD_D' fp=Package_TO_SOT_SMD:SOT-23 BOM_PN='AO3400' nets={'1': 'GATE_VFD_D', '2': 'GND', '3': 'VFD_D_RUN'}
+- Q_VFD_F: val='AO3400 VFD_F' fp=Package_TO_SOT_SMD:SOT-23 BOM_PN='AO3400' nets={'1': 'GATE_VFD_F', '2': 'GND', '3': 'VFD_F_RUN'}
+- REL_VFD_D: val='G5V VFD_D' fp=D03:BLOCK_SSR BOM_PN='G5V-2-DC24' nets={'LOAD': 'VFD1_FOR', 'AC': 'VFD1_FOR_COM', 'CTRL+': '+24V_BUS', 'CTRL-': 'VFD_D_RUN'}
+- REL_VFD_F: val='G5V VFD_F' fp=D03:BLOCK_SSR BOM_PN='G5V-2-DC24' nets={'LOAD': 'VFD2_FOR', 'AC': 'VFD2_FOR_COM', 'CTRL+': '+24V_BUS', 'CTRL-': 'VFD_F_RUN'}
+- R_AGIT_S: val='1k' fp=Resistor_SMD:R_0603_1608Metric BOM_PN='RC0603 1k' nets={'1': 'AGIT_EN', '2': 'GATE_AGIT'}
+- R_COOL_S: val='1k' fp=Resistor_SMD:R_0603_1608Metric BOM_PN='RC0603 1k' nets={'1': 'COOL_FAN_EN', '2': 'GATE_COOL'}
+- R_FA: val='20k' fp=Resistor_SMD:R_0603_1608Metric BOM_PN='RC0603 20k' nets={'1': 'VFD1_AI', '2': 'U20_INA_N'}
+- R_FB: val='20k' fp=Resistor_SMD:R_0603_1608Metric BOM_PN='RC0603 20k' nets={'1': 'VFD2_AI', '2': 'U20_INB_N'}
+- R_G1: val='1k' fp=Resistor_SMD:R_0603_1608Metric BOM_PN='RC0603 1k' nets={'1': 'GAS_EN', '2': 'GATE_GAS'}
+- R_G2: val='10k' fp=Resistor_SMD:R_0603_1608Metric BOM_PN='RC0603 10k' nets={'1': 'GATE_GAS', '2': 'GND'}
+- R_GA: val='10k' fp=Resistor_SMD:R_0603_1608Metric BOM_PN='RC0603 10k' nets={'1': 'U20_INA_N', '2': 'GND'}
+- R_GB: val='10k' fp=Resistor_SMD:R_0603_1608Metric BOM_PN='RC0603 10k' nets={'1': 'U20_INB_N', '2': 'GND'}
+- R_PUMP_S: val='1k' fp=Resistor_SMD:R_0603_1608Metric BOM_PN='RC0603 1k' nets={'1': 'PUMP_EN', '2': 'GATE_PUMP'}
+- R_VFD_D_S: val='1k' fp=Resistor_SMD:R_0603_1608Metric BOM_PN='RC0603 1k' nets={'1': 'VFD_D_RUN', '2': 'GATE_VFD_D'}
+- R_VFD_F_S: val='1k' fp=Resistor_SMD:R_0603_1608Metric BOM_PN='RC0603 1k' nets={'1': 'VFD_F_RUN', '2': 'GATE_VFD_F'}
+- U20: val='LM358' fp=Package_SO:SOIC-8_3.9x4.9mm_P1.27mm BOM_PN='LM358' nets={'1': 'VFD1_AI', '2': 'U20_INA_N', '3': 'DAC_D_OUT', '4': 'GND', '5': 'DAC_F_OUT', '6': 'U20_INB_N', '7': 'VFD2_AI', '8': '+12V_AUX'}
+
+## J9 MAIN vs IO pins 5-12
+- pin5: MAIN=GAS_EN | IO=GAS_EN | match=True
+- pin6: MAIN=VFD_D_RUN | IO=VFD_D_RUN | match=True
+- pin7: MAIN=VFD_F_RUN | IO=VFD_F_RUN | match=True
+- pin8: MAIN=AGIT_EN | IO=AGIT_EN | match=True
+- pin9: MAIN=COOL_FAN_EN | IO=COOL_FAN_EN | match=True
+- pin10: MAIN=PUMP_EN | IO=PUMP_EN | match=True
+- pin11: MAIN=DAC_D_OUT | IO=DAC_D_OUT | match=True
+- pin12: MAIN=DAC_F_OUT | IO=DAC_F_OUT | match=True

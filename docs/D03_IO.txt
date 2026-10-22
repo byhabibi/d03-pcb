@@ -1,0 +1,40 @@
+Unit — D03 Locked Spec v1.4 (Fase 1 Module-on-PCB · 2026-07-15)
+
+Mains: 220V AC 1-fasa 50Hz | Batch 3 kg | Gas LPG | CE target
+HMI: Nextion NX8048K070-011C capacitive 10"
+Clorofile/Artisan/Cropster: Danish Series.aset + D03_Modbus_Register_Map.md v1.2
+Artisan port: J_USB_ART → U_USB485 → J4 (Opsi B, 1× USB user — sama D01E)
+
+ARCHITECTURE: PCB-01 MAIN-CTRL (module seats) + PCB-02 IO-PWR (industrial locked)
+
+MODULE SEATS (MAIN — header 2.54mm pluggable):
+U3_MOD  MP1584-FIXED-5V  J9+24V → VIN → VOUT +5V_SYS
+        WAJIB FIXED 5V — LARANG trimpot | VIN modul ≥28V | QC VOUT 4.90..5.10V
+U1_DEVKIT  ESP32-DevKitC-32E  flash via USB DevKit (U8 CP2102 DNP)
+U4_MOD  MAX31856 breakout Bean   SPI CS=GPIO5
+U5_MOD  MAX31856 breakout Env    SPI CS=GPIO15
+U6_MOD  MAX31856 breakout Motor  SPI CS=GPIO0 (pull-up 10k)
+
+INPUT:
+TC Bean 3m → J1 → U4_MOD (MAIN, H2A)
+TC Environment 3m → J2 → U5_MOD
+TC Drum motor 3m → J3 → U6_MOD
+Proximity drum RPM PRL12-4DN → GPIO14
+Pressure LPG 0-12 bar 5V → GPIO34 ADC (alarm <2.0 kPa)
+MQ-6 gas leak → GPIO35 ADC + heater 5V from MAIN U3_MOD
+GX103 flame interlock NC → U_GX → U11 P0
+Burner ON / Flame FB → U11 P2 / P3
+Panel pots Air/Burner → GPIO36 / GPIO39; Pot Drum → U22 AIN0
+Btn Air/Drum/Burner → GPIO25/26/27
+Btn Water pump → U11 P4 (Fase1 — bukan GPIO37)
+Btn Cooling bin → U11 P5 (Fase1 — bukan GPIO38)
+E-Stop S2ER-E4R2BD 2NC + U11 P1 sense
+RS485 Modbus UART1 U7 @9600 — landing J4 dari U_USB485 (bukan dongle user)
+
+OUTPUT: (IO-PWR industrial — unchanged Fase 1)
+VFD Drum/Fan · K3 agitator · K4 cool fan · K_GAS · servo GPIO13 · pump · DFPlayer U9
+
+SAFETY: E-Stop NC putus semua; GX103 NC di coil 24V K_GAS — lihat Electrical §2
+
+HARNESS: H1 2x16 | H2A TC→MAIN | H2B IO→field | H3 safety
+Ref: D03_Module_Optimization_Fase1.md v1.0 · Electrical v1.5

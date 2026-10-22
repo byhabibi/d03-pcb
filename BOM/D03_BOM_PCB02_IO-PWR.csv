@@ -1,0 +1,51 @@
+No,Kategori,RefDes,Qty,Deskripsi,Manufacturer,Part Number,Paket,Fungsi,Catatan
+1,PSU,PSU1,1,24V 4.2A DIN rail,Mean Well,HDR-100-24,PCB02_IO,Control power,
+2,PSU,PSU2,1,12V 3A aux,Mean Well,LRS-35-12,PCB02_IO,Pump LED + panel aux + U20 VDD,
+3,Proteksi,F_24V,1,Glass fuse 4A 250V,Generic,4A slow,PCB02_IO,24V bus protection,
+4,Kontaktor,K_GAS,1,Contactor 9A 24VDC coil,Schneider,LC1D09BD,PCB02_IO,Gas master,
+5,Kontaktor,K3,1,Contactor 9A 24VDC,Schneider,LC1D09BD,PCB02_IO,Agitator fixed,
+6,Kontaktor,K4,1,Contactor 9A 24VDC,Schneider,LC1D09BD,PCB02_IO,Cooling fan,
+7,Relay,REL_VFD_D,1,Relay 24VDC 2A dry contact,Omron,G5V-2-DC24,PCB02_IO,Drum VFD FOR dry,LOAD/AC = VFD1_FOR / FOR_COM; CTRL+=+24 CTRL-=VFD_D_RUN
+8,Relay,REL_VFD_F,1,Relay 24VDC 2A dry contact,Omron,G5V-2-DC24,PCB02_IO,Fan VFD FOR dry,LOAD/AC = VFD2_FOR / FOR_COM; CTRL+=+24 CTRL-=VFD_F_RUN
+9,Driver,Q_GAS,1,MOSFET N-ch logic SOT-23,AOS,AO3400,PCB02_IO,K_GAS coil low-side,Was IRLZ44N - footprint SOT-23; G=GATE_GAS S=GND D=K_GAS_COIL+
+10,Driver,Q_AGIT,1,MOSFET N-ch logic SOT-23,AOS,AO3400,PCB02_IO,K3 coil low-side,G=GATE_AGIT S=GND D=AGIT_EN
+11,Driver,Q_COOL,1,MOSFET N-ch logic SOT-23,AOS,AO3400,PCB02_IO,K4 coil low-side,G=GATE_COOL S=GND D=COOL_FAN_EN
+12,Driver,Q_VFD_D,1,MOSFET N-ch logic SOT-23,AOS,AO3400,PCB02_IO,REL_VFD_D coil low-side,G=GATE_VFD_D S=GND D=VFD_D_RUN
+13,Driver,Q_VFD_F,1,MOSFET N-ch logic SOT-23,AOS,AO3400,PCB02_IO,REL_VFD_F coil low-side,G=GATE_VFD_F S=GND D=VFD_F_RUN
+14,Driver,Q_PUMP,1,MOSFET N-ch logic SOT-23,AOS,AO3400,PCB02_IO,Water pump 12V low-side,G=GATE_PUMP S=GND D=PUMP_EN
+15,Analog,U20,1,Op-amp dual 0-10V buffer,TI/NS,LM358,PCB02_IO,DAC 3.3V->~10V VFD AI,VDD=+12V_AUX; gain Rf/Rg=20k/10k
+16,Diode,D2,1,Flyback Schottky VFD drum,Generic,SS34,PCB02_IO,REL_VFD_D coil,K=+24V A=VFD_D_RUN
+17,Diode,D3,1,Flyback Schottky agitator,Generic,1N5819,PCB02_IO,K3 coil,K=+24V A=AGIT_EN
+18,Diode,D4,1,Flyback Schottky pump,Generic,1N5819,PCB02_IO,Q_PUMP flyback,K=+12V_AUX A=PUMP_EN
+19,Diode,D5,1,Flyback Schottky VFD fan,Generic,1N5819,PCB02_IO,REL_VFD_F coil,K=+24V A=VFD_F_RUN
+20,Diode,D6,1,Flyback Schottky cooling,Generic,1N5819,PCB02_IO,K4 coil,K=+24V A=COOL_FAN_EN
+21,Diode,D_GAS,1,Flyback rectifier gas,Generic,1N4007,PCB02_IO,K_GAS coil,K=+24V A=K_GAS_COIL+
+22,Proteksi,F_MAIN,1,MCB 1P 32A,Schneider,iC60N C32,PCB02_IO,Mains branch,
+23,Proteksi,F_CTRL,1,MCB 1P 6A,Schneider,iC60N C6,PCB02_IO,PSU control,
+24,EMI,EMI1,1,EMI filter 6A,Schaffner,FN2090-6-06,PCB02_IO,PSU AC input,
+25,Earth,J_PE,1,PE stud M4,Generic,M4 stud,PCB02_IO,Chassis earth,
+26,Konektor,J9,1,IDC 2x10 box mate PCB-01,Generic,IDC-20,PCB02_IO,Antar PCB MAIN<->IO,Pasang di PCB-02; pair dengan J9 di PCB-01
+27,Konektor,J3,1,Terminal block agitator / spare,Phoenix,1757018,PCB02_IO,Field tap IO,Footprint IO-PWR
+28,Konektor,J_GAS,1,Terminal gas valve output,Phoenix,1757018,PCB02_IO,K_GAS switched L,
+29,Konektor,J_VFD_D,1,Terminal VFD1 AI + GND,Phoenix,1757018,PCB02_IO,Drum VFD analog,Pin1=VFD1_AI Pin2=GND; FOR via REL dry pads
+30,Konektor,J_VFD_F,1,Terminal VFD2 AI + GND,Phoenix,1757018,PCB02_IO,Fan VFD analog,Pin1=VFD2_AI Pin2=GND; FOR via REL dry pads
+31,Konektor,J_H1L,1,Header 1x6 panel lamp bus,Generic,PinHeader_1x06,PCB02_IO,Harness H1L,PSU2 +12V -> lamp feedback
+32,Passives,R_G1,1,Resistor 1k series gate,Various,RC0603 1k,PCB02_IO,Q_GAS series gate,GAS_EN->GATE_GAS
+33,Passives,R_G2,1,Resistor 10k pull-down,Various,RC0603 10k,PCB02_IO,Q_GAS gate PD,GATE_GAS->GND
+34,Passives,R_AGIT_S,1,Resistor 1k series gate,Various,RC0603 1k,PCB02_IO,Q_AGIT series gate,AGIT_EN->GATE_AGIT
+35,Passives,R_COOL_S,1,Resistor 1k series gate,Various,RC0603 1k,PCB02_IO,Q_COOL series gate,COOL_FAN_EN->GATE_COOL
+36,Passives,R_PUMP_S,1,Resistor 1k series gate,Various,RC0603 1k,PCB02_IO,Q_PUMP series gate,PUMP_EN->GATE_PUMP
+37,Passives,R_VFD_D_S,1,Resistor 1k series gate,Various,RC0603 1k,PCB02_IO,Q_VFD_D series gate,VFD_D_RUN->GATE_VFD_D
+38,Passives,R_VFD_F_S,1,Resistor 1k series gate,Various,RC0603 1k,PCB02_IO,Q_VFD_F series gate,VFD_F_RUN->GATE_VFD_F
+39,Passives,R_Q3_G,1,Resistor 10k pull-down,Various,RC0603 10k,PCB02_IO,Q_AGIT gate PD,GATE_AGIT->GND
+40,Passives,R_Q4_G,1,Resistor 10k pull-down,Various,RC0603 10k,PCB02_IO,Q_PUMP gate PD,GATE_PUMP->GND
+41,Passives,R_Q7,1,Resistor 4.7k pull-down,Various,RC0603 4.7k,PCB02_IO,Q_COOL gate PD,GATE_COOL->GND
+42,Passives,R_VFD_D_G,1,Resistor 10k pull-down,Various,RC0603 10k,PCB02_IO,Q_VFD_D gate PD,GATE_VFD_D->GND
+43,Passives,R_VFD_F_G,1,Resistor 10k pull-down,Various,RC0603 10k,PCB02_IO,Q_VFD_F gate PD,GATE_VFD_F->GND
+44,Passives,R_FA,1,Resistor 20k feedback,Various,RC0603 20k,PCB02_IO,U20 chA Rf,
+45,Passives,R_GA,1,Resistor 10k gain,Various,RC0603 10k,PCB02_IO,U20 chA Rg,
+46,Passives,R_FB,1,Resistor 20k feedback,Various,RC0603 20k,PCB02_IO,U20 chB Rf,
+47,Passives,R_GB,1,Resistor 10k gain,Various,RC0603 10k,PCB02_IO,U20 chB Rg,
+48,Passives,C18,1,Ceramic 100nF decoupling,Various,0603 100nF,PCB02_IO,Local decoupling,
+49,Passives,C19,1,Ceramic 100nF decoupling,Various,0603 100nF,PCB02_IO,Local decoupling,
+50,Passives,C20,1,Ceramic/elec 10uF bulk,Various,0805 10uF,PCB02_IO,PSU bulk cap,

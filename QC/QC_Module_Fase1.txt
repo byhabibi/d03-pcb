@@ -1,0 +1,15 @@
+D03 MAIN Fase 1 — fab / incoming QC (PCB manufacturer)
+
+[ ] Buck = FIXED 5V, no trimpot, VIN rated ≥28 V (input +24V dari J9.1)
+[ ] VOUT 4.90 .. 5.10 V @ +5V_SYS (setelah board hidup)
+[ ] DevKitC-32E headers; flash USB DevKit (U8 + J_USB = DNP)
+[ ] MAX31856 breakout ×3 (Bean/Env/Motor)
+[ ] No discrete L1/L4 on P&P / positions.csv
+[ ] Silk: BUCK 5V FIXED · ESP32 DevKit · BEAN/ENV/MOTOR TC MODULE
+[ ] Net pump/cool → U11 P4/P5 (jangan route GPIO37/38 ke DevKit)
+[ ] MAIN Gerber = NEW export (bukan set dengan DO_NOT_FAB_STALE.txt)
+[ ] IO Gerber: DRC = 0 (bukan HOLD_FAB_DRC)
+[ ] Source route = KiCad_LIVE_PRE_ROUTE (bukan review PDF lama)
+
+Docs: ../docs/D03_Module_Optimization_Fase1.md
+Gerber status: ../README.txt

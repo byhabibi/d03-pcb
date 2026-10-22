@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "filename": "D03-IO-PWR.kicad_pro",
+    "version": 1
+  },
+  "schematic": {
+    "legacy_lib_dir": "",
+    "legacy_lib_list": []
+  },
+  "text_variables": {
+    "COMPANY": "Hartanzah",
+    "REV": "1.0",
+    "TITLE": "D03-IO-PWR"
+  }
+}

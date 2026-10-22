@@ -1,0 +1,2114 @@
+(export
+	(version "E")
+	(design
+		(source "D:\\Hartanzah Manufaktur Indonesia\\Master Design 2026\\Danish 03\\KiCad\\D03-MAIN-CTRL\\D03-MAIN-CTRL.kicad_sch")
+		(date "2026-07-13T07:53:18")
+		(tool "Eeschema 10.0.4")
+		(textvar
+			(name "COMPANY") "Hartanzah")
+		(textvar
+			(name "REV") "1.0")
+		(textvar
+			(name "TITLE") "D03-MAIN-CTRL")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title "D03-MAIN-CTRL")
+				(company "Hartanzah Manufaktur Indonesia")
+				(rev "3.5")
+				(date "2026-07-10")
+				(source "D03-MAIN-CTRL.kicad_sch")
+				(comment
+					(number "1")
+					(value "D01E Danish 01 Electric")
+				)
+				(comment
+					(number "2")
+					(value "ERC-clean block schematic")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "2")
+			(name "/Power/")
+			(tstamps "/67e137b8-c161-4682-ad74-9e9d33a7ffdf/")
+			(title_block
+				(title "D03-MAIN-CTRL / Power")
+				(company "Hartanzah Manufaktur Indonesia")
+				(rev "3.5")
+				(date "2026-07-10")
+				(source "power.kicad_sch")
+				(comment
+					(number "1")
+					(value "D01E Danish 01 Electric")
+				)
+				(comment
+					(number "2")
+					(value "ERC-clean block schematic")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "3")
+			(name "/Inputs/")
+			(tstamps "/953647c9-31cf-487e-a8e4-322cdc604fd0/")
+			(title_block
+				(title "D03-MAIN-CTRL / Inputs")
+				(company "Hartanzah Manufaktur Indonesia")
+				(rev "3.5")
+				(date "2026-07-10")
+				(source "inputs.kicad_sch")
+				(comment
+					(number "1")
+					(value "D01E Danish 01 Electric")
+				)
+				(comment
+					(number "2")
+					(value "ERC-clean block schematic")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "4")
+			(name "/MCU/")
+			(tstamps "/c92d6dbc-4963-4c62-a5fd-5c4e3e039eb7/")
+			(title_block
+				(title "D03-MAIN-CTRL / MCU")
+				(company "Hartanzah Manufaktur Indonesia")
+				(rev "3.5")
+				(date "2026-07-10")
+				(source "mcu.kicad_sch")
+				(comment
+					(number "1")
+					(value "D01E Danish 01 Electric")
+				)
+				(comment
+					(number "2")
+					(value "ERC-clean block schematic")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "5")
+			(name "/DAC ADC/")
+			(tstamps "/85cca2cc-cb77-4bb6-8dde-19761117c02e/")
+			(title_block
+				(title "D03-MAIN-CTRL / DAC ADC")
+				(company "Hartanzah Manufaktur Indonesia")
+				(rev "3.5")
+				(date "2026-07-10")
+				(source "dac_adc.kicad_sch")
+				(comment
+					(number "1")
+					(value "D01E Danish 01 Electric")
+				)
+				(comment
+					(number "2")
+					(value "ERC-clean block schematic")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "6")
+			(name "/Thermocouple/")
+			(tstamps "/7f0566fa-a429-411e-8dd6-4c8356a5f593/")
+			(title_block
+				(title "D03-MAIN-CTRL / Thermocouple")
+				(company "Hartanzah Manufaktur Indonesia")
+				(rev "3.5")
+				(date "2026-07-10")
+				(source "thermocouple.kicad_sch")
+				(comment
+					(number "1")
+					(value "D01E Danish 01 Electric")
+				)
+				(comment
+					(number "2")
+					(value "ERC-clean block schematic")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "7")
+			(name "/Audio/")
+			(tstamps "/58b1ecda-d7f5-4258-9f9f-3d1fb9a63682/")
+			(title_block
+				(title "D03-MAIN-CTRL / Audio")
+				(company "Hartanzah Manufaktur Indonesia")
+				(rev "3.5")
+				(date "2026-07-10")
+				(source "audio.kicad_sch")
+				(comment
+					(number "1")
+					(value "D01E Danish 01 Electric")
+				)
+				(comment
+					(number "2")
+					(value "ERC-clean block schematic")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "8")
+			(name "/Comms/")
+			(tstamps "/17a9e838-b542-43e0-8299-69d4c364f99a/")
+			(title_block
+				(title "D03-MAIN-CTRL / Comms")
+				(company "Hartanzah Manufaktur Indonesia")
+				(rev "3.5")
+				(date "2026-07-10")
+				(source "comms.kicad_sch")
+				(comment
+					(number "1")
+					(value "D01E Danish 01 Electric")
+				)
+				(comment
+					(number "2")
+					(value "ERC-clean block schematic")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+		(sheet
+			(number "9")
+			(name "/Connectors/")
+			(tstamps "/add45944-5989-4750-9b11-cc755dfaab6b/")
+			(title_block
+				(title "D03-MAIN-CTRL / Connectors")
+				(company "Hartanzah Manufaktur Indonesia")
+				(rev "3.5")
+				(date "2026-07-10")
+				(source "connectors.kicad_sch")
+				(comment
+					(number "1")
+					(value "D01E Danish 01 Electric")
+				)
+				(comment
+					(number "2")
+					(value "ERC-clean block schematic")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "U2")
+			(value "MCP1700-3302E")
+			(footprint "Package_TO_SOT_SMD:SOT-23")
+			(fields
+				(field
+					(name "MPN") "MCP1700-3302E")
+				(field
+					(name "Footprint") "Package_TO_SOT_SMD:SOT-23")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "MCP1700")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "MCP1700-3302E")
+			)
+			(property
+				(name "Sheetname")
+				(value "Power")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/power.kicad_sch")
+			)
+			(sheetpath
+				(names "/Power/")
+				(tstamps "/67e137b8-c161-4682-ad74-9e9d33a7ffdf/")
+			)
+			(tstamps "7315c41a-dfd8-4a11-b814-9a23a5e04500")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U3")
+			(value "MP1584EN")
+			(footprint "Package_TO_SOT_SMD:SOT-23-6")
+			(fields
+				(field
+					(name "MPN") "MP1584EN")
+				(field
+					(name "Footprint") "Package_TO_SOT_SMD:SOT-23-6")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "MP1584")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "MP1584EN")
+			)
+			(property
+				(name "Sheetname")
+				(value "Power")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/power.kicad_sch")
+			)
+			(sheetpath
+				(names "/Power/")
+				(tstamps "/67e137b8-c161-4682-ad74-9e9d33a7ffdf/")
+			)
+			(tstamps "43148806-d023-4e2c-bde2-0104c096ac50")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "J_H1")
+			(value "Panel 2x16")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Vertical")
+			(fields
+				(field
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "CONN_HDR")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Inputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/inputs.kicad_sch")
+			)
+			(sheetpath
+				(names "/Inputs/")
+				(tstamps "/953647c9-31cf-487e-a8e4-322cdc604fd0/")
+			)
+			(tstamps "4f4b474e-5aba-48f3-9770-a708ef54d224")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U11")
+			(value "PCF8574AP @0x21")
+			(footprint "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm")
+			(fields
+				(field
+					(name "Footprint") "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "PCF8574")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Inputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/inputs.kicad_sch")
+			)
+			(sheetpath
+				(names "/Inputs/")
+				(tstamps "/953647c9-31cf-487e-a8e4-322cdc604fd0/")
+			)
+			(tstamps "11ff0d26-38aa-4cf0-94c2-b46fd1caa149")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U14")
+			(value "PC817C")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "PC817")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Inputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/inputs.kicad_sch")
+			)
+			(sheetpath
+				(names "/Inputs/")
+				(tstamps "/953647c9-31cf-487e-a8e4-322cdc604fd0/")
+			)
+			(tstamps "85f73fa9-5e22-4e2f-86ef-a7461961eeed")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U15")
+			(value "PC817C")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "PC817")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Inputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/inputs.kicad_sch")
+			)
+			(sheetpath
+				(names "/Inputs/")
+				(tstamps "/953647c9-31cf-487e-a8e4-322cdc604fd0/")
+			)
+			(tstamps "053804a1-0a50-4a53-93a8-596a2fc2c35f")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U16")
+			(value "PC817C")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "PC817")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Inputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/inputs.kicad_sch")
+			)
+			(sheetpath
+				(names "/Inputs/")
+				(tstamps "/953647c9-31cf-487e-a8e4-322cdc604fd0/")
+			)
+			(tstamps "50d5f067-70a6-4a80-963a-61bd3490ab52")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U17")
+			(value "PC817C")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "PC817")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Inputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/inputs.kicad_sch")
+			)
+			(sheetpath
+				(names "/Inputs/")
+				(tstamps "/953647c9-31cf-487e-a8e4-322cdc604fd0/")
+			)
+			(tstamps "90b212bc-cf12-4d39-bcfd-0e18173edfc9")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U18")
+			(value "PC817C")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "PC817")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Inputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/inputs.kicad_sch")
+			)
+			(sheetpath
+				(names "/Inputs/")
+				(tstamps "/953647c9-31cf-487e-a8e4-322cdc604fd0/")
+			)
+			(tstamps "3d463cf7-a2fe-45d0-a52f-ec59b09cd0b4")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U19")
+			(value "PC817C")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "PC817")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Inputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/inputs.kicad_sch")
+			)
+			(sheetpath
+				(names "/Inputs/")
+				(tstamps "/953647c9-31cf-487e-a8e4-322cdc604fd0/")
+			)
+			(tstamps "00a60a86-bc36-4e9e-bb67-7e92a1b57373")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U20")
+			(value "PC817C")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "PC817")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Inputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/inputs.kicad_sch")
+			)
+			(sheetpath
+				(names "/Inputs/")
+				(tstamps "/953647c9-31cf-487e-a8e4-322cdc604fd0/")
+			)
+			(tstamps "4023e579-8050-4d53-8c1c-a2bac88f29e9")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U21")
+			(value "PC817C")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "PC817")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Inputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/inputs.kicad_sch")
+			)
+			(sheetpath
+				(names "/Inputs/")
+				(tstamps "/953647c9-31cf-487e-a8e4-322cdc604fd0/")
+			)
+			(tstamps "a9ba8324-30e8-4c94-8744-4359647018f5")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U_BURN")
+			(value "PC817C")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "PC817")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Inputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/inputs.kicad_sch")
+			)
+			(sheetpath
+				(names "/Inputs/")
+				(tstamps "/953647c9-31cf-487e-a8e4-322cdc604fd0/")
+			)
+			(tstamps "26aee266-26b1-4b67-8afd-0f2ea5d49551")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U_FLAME")
+			(value "PC817C")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "PC817")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Inputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/inputs.kicad_sch")
+			)
+			(sheetpath
+				(names "/Inputs/")
+				(tstamps "/953647c9-31cf-487e-a8e4-322cdc604fd0/")
+			)
+			(tstamps "27a6c04c-3621-4b34-9b93-9a5df4af56f8")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U_GX")
+			(value "PC817C")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "PC817")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Inputs")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/inputs.kicad_sch")
+			)
+			(sheetpath
+				(names "/Inputs/")
+				(tstamps "/953647c9-31cf-487e-a8e4-322cdc604fd0/")
+			)
+			(tstamps "adad622e-d199-4b73-944e-9057f403e9f5")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "ESP32-WROOM-32E")
+			(footprint "RF_Module:ESP32-WROOM-32")
+			(fields
+				(field
+					(name "MPN") "ESP32-WROOM-32E")
+				(field
+					(name "Footprint") "RF_Module:ESP32-WROOM-32")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "ESP32")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "ESP32-WROOM-32E")
+			)
+			(property
+				(name "Sheetname")
+				(value "MCU")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/mcu.kicad_sch")
+			)
+			(sheetpath
+				(names "/MCU/")
+				(tstamps "/c92d6dbc-4963-4c62-a5fd-5c4e3e039eb7/")
+			)
+			(tstamps "12d0d527-2df2-4558-8974-90f0d59aeb51")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U12")
+			(value "MCP4725 @0x60")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "PCF8574")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "DAC ADC")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/dac_adc.kicad_sch")
+			)
+			(sheetpath
+				(names "/DAC ADC/")
+				(tstamps "/85cca2cc-cb77-4bb6-8dde-19761117c02e/")
+			)
+			(tstamps "4036e78f-51cd-4430-882e-7ca845375123")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U13")
+			(value "MCP4725 @0x61")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "PCF8574")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "DAC ADC")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/dac_adc.kicad_sch")
+			)
+			(sheetpath
+				(names "/DAC ADC/")
+				(tstamps "/85cca2cc-cb77-4bb6-8dde-19761117c02e/")
+			)
+			(tstamps "b9a4b7f9-1088-4ee2-8592-56bb5c22f419")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U22")
+			(value "PCF8591 @0x48")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "PCF8574")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "DAC ADC")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/dac_adc.kicad_sch")
+			)
+			(sheetpath
+				(names "/DAC ADC/")
+				(tstamps "/85cca2cc-cb77-4bb6-8dde-19761117c02e/")
+			)
+			(tstamps "0b1402ca-eaf4-48fe-be44-f9db8e2b0464")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "J1")
+			(value "PCC-SMP-K Bean")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "CONN_TC")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Thermocouple")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/thermocouple.kicad_sch")
+			)
+			(sheetpath
+				(names "/Thermocouple/")
+				(tstamps "/7f0566fa-a429-411e-8dd6-4c8356a5f593/")
+			)
+			(tstamps "89df4a24-d248-4594-8230-4c05c0e3d51c")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "J2")
+			(value "PCC-SMP-K Env")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "CONN_TC")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Thermocouple")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/thermocouple.kicad_sch")
+			)
+			(sheetpath
+				(names "/Thermocouple/")
+				(tstamps "/7f0566fa-a429-411e-8dd6-4c8356a5f593/")
+			)
+			(tstamps "0daf5cda-72a0-4790-be94-2b6181eaa20c")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "J3")
+			(value "PCC-SMP-K Motor")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "CONN_TC")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Thermocouple")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/thermocouple.kicad_sch")
+			)
+			(sheetpath
+				(names "/Thermocouple/")
+				(tstamps "/7f0566fa-a429-411e-8dd6-4c8356a5f593/")
+			)
+			(tstamps "469f440c-354b-40e4-b2a4-1b86df3669aa")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U4")
+			(value "MAX31856 Bean")
+			(footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+			(fields
+				(field
+					(name "MPN") "MAX31856ATI+")
+				(field
+					(name "Footprint") "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "MAX31856")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "MAX31856ATI+")
+			)
+			(property
+				(name "Sheetname")
+				(value "Thermocouple")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/thermocouple.kicad_sch")
+			)
+			(sheetpath
+				(names "/Thermocouple/")
+				(tstamps "/7f0566fa-a429-411e-8dd6-4c8356a5f593/")
+			)
+			(tstamps "5a4b39e8-b9dd-465b-8e5a-b82d2575177e")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U5")
+			(value "MAX31856 Env")
+			(footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+			(fields
+				(field
+					(name "MPN") "MAX31856ATI+")
+				(field
+					(name "Footprint") "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "MAX31856")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "MAX31856ATI+")
+			)
+			(property
+				(name "Sheetname")
+				(value "Thermocouple")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/thermocouple.kicad_sch")
+			)
+			(sheetpath
+				(names "/Thermocouple/")
+				(tstamps "/7f0566fa-a429-411e-8dd6-4c8356a5f593/")
+			)
+			(tstamps "664cf5da-ac29-4fb2-8f4e-21f95533a120")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U6")
+			(value "MAX31856 Motor")
+			(footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+			(fields
+				(field
+					(name "MPN") "MAX31856ATI+")
+				(field
+					(name "Footprint") "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "MAX31856")
+				(description "")
+			)
+			(property
+				(name "MPN")
+				(value "MAX31856ATI+")
+			)
+			(property
+				(name "Sheetname")
+				(value "Thermocouple")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/thermocouple.kicad_sch")
+			)
+			(sheetpath
+				(names "/Thermocouple/")
+				(tstamps "/7f0566fa-a429-411e-8dd6-4c8356a5f593/")
+			)
+			(tstamps "b3f5849e-67c1-4a2f-bdd2-c887d8569c80")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "J10")
+			(value "JST-XH 4p")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "CONN_HDR")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Audio")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/audio.kicad_sch")
+			)
+			(sheetpath
+				(names "/Audio/")
+				(tstamps "/58b1ecda-d7f5-4258-9f9f-3d1fb9a63682/")
+			)
+			(tstamps "f2eba41e-19ab-417b-83be-58d40394c3b9")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U9")
+			(value "DFPlayer Mini")
+			(footprint "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical")
+			(fields
+				(field
+					(name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "DFPLAYER")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Audio")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/audio.kicad_sch")
+			)
+			(sheetpath
+				(names "/Audio/")
+				(tstamps "/58b1ecda-d7f5-4258-9f9f-3d1fb9a63682/")
+			)
+			(tstamps "567f8215-e7e3-41e5-ab20-dff00c0ceb8a")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "J4")
+			(value "RS485 3p")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "CONN_HDR")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Comms")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/comms.kicad_sch")
+			)
+			(sheetpath
+				(names "/Comms/")
+				(tstamps "/17a9e838-b542-43e0-8299-69d4c364f99a/")
+			)
+			(tstamps "95c47132-118b-4dba-9559-039b4dfcf76b")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "J_USB")
+			(value "USB-C")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "CONN_HDR")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Comms")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/comms.kicad_sch")
+			)
+			(sheetpath
+				(names "/Comms/")
+				(tstamps "/17a9e838-b542-43e0-8299-69d4c364f99a/")
+			)
+			(tstamps "6af3aec4-263e-4d7b-b0e3-12837121c799")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "Q1")
+			(value "BC847C")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "BC847")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Comms")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/comms.kicad_sch")
+			)
+			(sheetpath
+				(names "/Comms/")
+				(tstamps "/17a9e838-b542-43e0-8299-69d4c364f99a/")
+			)
+			(tstamps "5ddccc06-8052-405d-b86f-5245fd70389e")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U7")
+			(value "MAX3485ESA+")
+			(footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+			(fields
+				(field
+					(name "Footprint") "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "MAX3485")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Comms")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/comms.kicad_sch")
+			)
+			(sheetpath
+				(names "/Comms/")
+				(tstamps "/17a9e838-b542-43e0-8299-69d4c364f99a/")
+			)
+			(tstamps "4b690778-2ef9-49c4-8b72-ba7ab006598b")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U8")
+			(value "CP2102N-A02")
+			(footprint "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm")
+			(fields
+				(field
+					(name "Footprint") "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "CP2102N")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Comms")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/comms.kicad_sch")
+			)
+			(sheetpath
+				(names "/Comms/")
+				(tstamps "/17a9e838-b542-43e0-8299-69d4c364f99a/")
+			)
+			(tstamps "2a757c19-6329-4056-a58f-70a2f375a2e4")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "U10")
+			(value "PCF8574AP @0x20")
+			(footprint "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm")
+			(fields
+				(field
+					(name "Footprint") "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "PCF8574")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Comms")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/comms.kicad_sch")
+			)
+			(sheetpath
+				(names "/Comms/")
+				(tstamps "/17a9e838-b542-43e0-8299-69d4c364f99a/")
+			)
+			(tstamps "3e53df3b-e67a-4a4c-a1fd-7f6a960a2ba7")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "J9")
+			(value "IDC 2x10")
+			(footprint "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical")
+			(fields
+				(field
+					(name "Footprint") "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "CONN_HDR")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Connectors")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/connectors.kicad_sch")
+			)
+			(sheetpath
+				(names "/Connectors/")
+				(tstamps "/add45944-5989-4750-9b11-cc755dfaab6b/")
+			)
+			(tstamps "cfe68b03-da1f-40a9-9fb4-305f5a2eabf9")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+		(comp
+			(ref "J_COLOR")
+			(value "Color DNP")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "D01E")
+				(part "CONN_HDR")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Connectors")
+			)
+			(property
+				(name "Sheetfile")
+				(value "sheets/connectors.kicad_sch")
+			)
+			(sheetpath
+				(names "/Connectors/")
+				(tstamps "/add45944-5989-4750-9b11-cc755dfaab6b/")
+			)
+			(tstamps "dfa2d3ea-fc84-4621-9965-81f3699027fd")
+			(units
+				(unit
+					(name "A")
+					(pins)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "D01E")
+			(part "BC847")
+			(fields
+				(field
+					(name "Reference") "Q")
+				(field
+					(name "Value") "BC847C")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "CONN_HDR")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Header")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "CONN_TC")
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "PCC-SMP-K")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "CP2102N")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "CP2102N-A02")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "DFPLAYER")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "DFPlayer Mini")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "ESP32")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "ESP32-WROOM-32E")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "MAX31856")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "MAX31856ATI+")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "MAX3485")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "MAX3485ESA+")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "MCP1700")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "MCP1700-3.3")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "MP1584")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "MP1584EN Buck")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "NET_PORT")
+			(fields
+				(field
+					(name "Reference") "NP")
+				(field
+					(name "Value") "NET")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "PC817")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "PC817C")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+		(libpart
+			(lib "D01E")
+			(part "PCF8574")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "PCF8574AP")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "D01E")
+			(uri "${KIPRJMOD}/D01E.kicad_sym")
+		)
+	)
+	(nets)
+)

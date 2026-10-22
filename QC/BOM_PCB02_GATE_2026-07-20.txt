@@ -1,0 +1,31 @@
+# D03 BOM vs PCB GATE — 03_PCB_Manufacturer/BOM
+# Date: 2026-07-20
+
+## VERDICT PCB-02 (routing gate): PASS — BOM PCB-02 tally 100%
+## VERDICT ALL BOARDS: FAIL
+PCB02_FAIL_COUNT = 0
+ALL_FAIL_COUNT = 14
+
+## File parity (02_Electrical vs 03_PCB_Manufacturer)
+- D03_BOM_FIELD_ASSEMBLY.csv: IDENTICAL
+- D03_BOM_PCB01_MAIN-CTRL.csv: IDENTICAL
+- D03_BOM_PCB02_IO-PWR.csv: IDENTICAL
+- D03_BOM_Production.csv: IDENTICAL
+
+## PCB-02 IO-PWR vs D03_BOM_PCB02_IO-PWR.csv
+- BOM lines: 50
+- PCB footprints: 54
+- BOM ref missing on PCB: none
+- PCB ref missing in BOM: none
+- value mismatch: none
+- pad-net FAIL: none
+
+## PCB-01 MAIN vs D03_BOM_PCB01_MAIN-CTRL.csv
+- BOM ref missing on PCB: ['U14-U21 (from U14-U21)', 'J1-J3 (from J1-J3)']
+- PCB ref missing in BOM: ["D1 'SMAJ6.5CA'", "J1 'PCC-SMP-K Bean'", "J2 'PCC-SMP-K Env'", "J3 'PCC-SMP-K Motor'", "U14 'PC817C'", "U15 'PC817C'", "U16 'PC817C'", "U17 'PC817C'", "U18 'PC817C'", "U19 'PC817 spare'", "U21 'PC817 spare'", "U_OPT20 'PC817 spare (was U20)'"]
+- value mismatch: none
+- pad-net FAIL: none
+
+Master rows: 94 | Split total rows: 124
+
+PCB-02 routing may proceed when VERDICT PCB-02 = PASS.

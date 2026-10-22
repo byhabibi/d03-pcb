@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1280" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="1600" height="1280" fill="#faf9f7"/>
+  <text x="800" y="36" text-anchor="middle" font-size="24" font-weight="700">L2 · MAIN — Checklist jalur PCB (pad → pad) D03</text>
+  <text x="800" y="60" text-anchor="middle" font-size="13" fill="#4a5568">Junior layout centang satu per satu di KiCad · nama net harus SAMA · +24V → FIXED 5V</text>
+
+  <rect x="40" y="85" width="740" height="250" fill="#fffaf0" stroke="#dd6b20" stroke-width="2" rx="8"/>
+  <text x="60" y="115" font-size="16" font-weight="700" fill="#c05621">A. POWER (wajib dulu)</text>
+  <text x="60" y="145" font-size="13">☐ J9.1  →  U3.1 VIN     net +24V_IN    (lebar ≥0.80 mm)</text>
+  <text x="60" y="170" font-size="13">☐ J9.2  →  GND zone     net GND</text>
+  <text x="60" y="195" font-size="13">☐ U3.2  →  GND          net GND</text>
+  <text x="60" y="220" font-size="13">☐ U3.3  →  U1.L19       net +5V_SYS    (ke DevKit 5V) ≥0.80 mm</text>
+  <text x="60" y="245" font-size="13">☐ U3.3  →  U7/U9/U10/U11/U12/U13 + C4  net +5V_SYS</text>
+  <text x="60" y="270" font-size="13">☐ U2 ← +5V_SYS · U2 → U4.1 &amp; U5.1 &amp; U6.1  net +3V3_ANA ≥0.50 mm</text>
+  <text x="60" y="300" font-size="12" fill="#c53030" font-weight="700">U3 = FIXED 5V 3 pin · VIN≥28V · NO ADJ · QC VOUT 4.90–5.10 V</text>
+
+  <rect x="820" y="85" width="740" height="250" fill="#ebf8ff" stroke="#2b6cb0" stroke-width="2" rx="8"/>
+  <text x="840" y="115" font-size="16" font-weight="700" fill="#2b6cb0">B. SPI THERMOCOUPLE ×3 (pendek!)</text>
+  <text x="840" y="145" font-size="13">☐ U1.R9  → U4.6 &amp; U5.6 &amp; U6.6   SPI_SCK</text>
+  <text x="840" y="170" font-size="13">☐ U1.R2  → U4.7 &amp; U5.7 &amp; U6.7   SPI_MOSI</text>
+  <text x="840" y="195" font-size="13">☐ U1.R8  → U4.4 &amp; U5.4 &amp; U6.4   SPI_MISO</text>
+  <text x="840" y="220" font-size="13">☐ U1.R10 → U4.5  SPI_CS_BEAN (GPIO5)</text>
+  <text x="840" y="245" font-size="13">☐ U1.R16 → U5.5  SPI_CS_ENV  (GPIO15)</text>
+  <text x="840" y="270" font-size="13">☐ U1.R14 → U6.5  SPI_CS_MOTOR (GPIO0) + 10k pull-up ke +3V3</text>
+  <text x="840" y="300" font-size="12" fill="#2b6cb0">J1/J2/J3 dekat U4/U5/U6 · SPI bus &lt; 40 mm · jauh buck U3</text>
+
+  <rect x="40" y="360" width="740" height="240" fill="#f0fff4" stroke="#276749" stroke-width="2" rx="8"/>
+  <text x="60" y="390" font-size="16" font-weight="700" fill="#276749">C. INPUT PANEL (opto → DevKit / PCF)</text>
+  <text x="60" y="420" font-size="13">☐ J_H1 BTN_AIR/DRUM/BURN → opto U14/U15/U16 → L9/L10/L11</text>
+  <text x="60" y="445" font-size="13">☐ BTN_PUMP / BTN_COOL → opto U18/U17 → U11 P4 / P5 (bukan GPIO37/38)</text>
+  <text x="60" y="470" font-size="13">☐ J_H1 pots → L3 POT_AIR · L4 POT_BURN · GAS_PRESS L5 · MQ6 L6</text>
+  <text x="60" y="495" font-size="13">☐ PROX_RPM → U1.L12 (GPIO14)</text>
+  <text x="60" y="520" font-size="13">☐ U11 P0 GX103 · P1 ESTOP · P2/P3 flame/burner FB</text>
+  <text x="60" y="550" font-size="12">BTN_* Active LOW · pull-up dekat opto · jangan pakai GPIO37/38 DevKitC</text>
+
+  <rect x="820" y="360" width="740" height="240" fill="#fff5f5" stroke="#c53030" stroke-width="2" rx="8"/>
+  <text x="840" y="390" font-size="16" font-weight="700" fill="#c53030">D. OUTPUT KE IO (J9) — gas/VFD</text>
+  <text x="840" y="420" font-size="13">☐ U10 P0 → J9.5   GAS_EN</text>
+  <text x="840" y="445" font-size="13">☐ U10 P1 → J9.6   VFD_D_RUN</text>
+  <text x="840" y="470" font-size="13">☐ U10 P2 → J9.7   VFD_F_RUN</text>
+  <text x="840" y="495" font-size="13">☐ U10 P3 → J9.8   AGIT_EN · P4→J9.9 COOL · P5→J9.10 PUMP</text>
+  <text x="840" y="520" font-size="13">☐ DAC → J9.11/12 · U1.L15 → SERVO_PWM (bukan via J9)</text>
+  <text x="840" y="550" font-size="12" fill="#c53030">J9.1 = +24V ke MAIN U3 · jauhkan gas control dari SPI panjang</text>
+
+  <rect x="40" y="625" width="740" height="240" fill="#faf5ff" stroke="#6b46c1" stroke-width="2" rx="8"/>
+  <text x="60" y="655" font-size="16" font-weight="700" fill="#6b46c1">E. RS485 + I2C + AUDIO + UART</text>
+  <text x="60" y="685" font-size="13">☐ U1.R11 → U7.7 UART1_TX · U1.R12 → U7.6 UART1_RX</text>
+  <text x="60" y="710" font-size="13">☐ U7 → J4 RS485_A/B · TVS + bias dekat J4</text>
+  <text x="60" y="735" font-size="13">☐ U1.R6 → SDA · U1.R3 → SCL → U10/U11/U12/U13</text>
+  <text x="60" y="760" font-size="13">☐ U1.R13 → U9.2 DFPLAYER_TX · U9.1 ← +5V</text>
+  <text x="60" y="785" font-size="13">☐ J_H1 ←→ UART2 Nextion (L7/L8)</text>
+  <text x="60" y="815" font-size="12">I2C addr: U10@0x20 OUT · U11@0x21 IN · DAC MCP4725 @0x60/0x61</text>
+
+  <rect x="820" y="625" width="740" height="240" fill="#edf2f7" stroke="#4a5568" stroke-width="2" rx="8"/>
+  <text x="840" y="655" font-size="16" font-weight="700">F. FOOTPRINT SEATS (KiCad)</text>
+  <text x="840" y="685" font-size="13">☐ U1 = D03:MODULE_ESP32_DEVKITC (bukan WROOM soldered)</text>
+  <text x="840" y="710" font-size="13">☐ U3 = MODULE_MP1584 FIXED 5V 3P (VIN/GND/VOUT)</text>
+  <text x="840" y="735" font-size="13">☐ U4 / U5 / U6 = MODULE_MAX31856_8P ×3</text>
+  <text x="840" y="760" font-size="13">☐ U8 + J_USB = DNP Fase 1 (jangan populate)</text>
+  <text x="840" y="785" font-size="13">☐ U11 TETAP diisi (PCF input) — DNP = U8 saja</text>
+  <text x="840" y="815" font-size="12" fill="#744210">Silk: BUCK 5V FIXED · DevKit · BEAN/ENV/MOTOR TC · NO L1/L4 discrete</text>
+
+  <rect x="40" y="890" width="1520" height="160" fill="#ffffff" stroke="#a0aec0" stroke-width="2" rx="8"/>
+  <text x="60" y="925" font-size="15" font-weight="700">G. Urutan kerja junior di KiCad</text>
+  <text x="60" y="955" font-size="13">1. Place seats (U3→U1→U4/U5/U6→J9→J_H1→chips) sesuai zona L2 placement</text>
+  <text x="60" y="980" font-size="13">2. Assign net tiap pad dari checklist A–E · jangan menebak GPIO</text>
+  <text x="60" y="1005" font-size="13">3. Route +24V → +5V → GND → SPI → TC → UART → I2C → GPIO → Silk (L3_13)</text>
+  <text x="60" y="1030" font-size="13">4. DRC 0 · Gerber BARU · reject positions masih WROOM / MP1584EN / L4 / SOIC</text>
+
+  <text x="800" y="1100" text-anchor="middle" font-size="12" fill="#718096">Truth: scripts/pcb_nets.py · config.h · D03_BOM_Production.csv · Electrical v1.5</text>
+  <text x="800" y="1130" text-anchor="middle" font-size="13" font-weight="700" fill="#c53030">Gerber lama WROOM/SOIC — JANGAN kirim fab sampai langkah G.4 selesai</text>
+</svg>

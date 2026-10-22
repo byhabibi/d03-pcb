@@ -1,0 +1,176 @@
+# D03 PCB-02 EE EVIDENCE PACK — placement / type / BOM / firmware
+# Date: 2026-07-21
+# PCB sha256: e66cc1c374d568683ab9be30b7fd53763eb7de4b30c5686a3ee2a8f2a1b2de30
+# BOM lines: 50 | PCB footprints: 54 | active: 50
+# Copper tracks: 0
+
+## VERDICT: PASS 100% — GO ROUTE
+FAIL_COUNT = 0
+FAILS = none
+
+## 1. File integrity
+- BOM 03↔02 byte-identical: True
+- FW_VERSION_BCD: 0x010E
+- PCF8574_OUT_ADDR: 0x20
+- Active-high load drivers in pcf8574_io.cpp: True
+
+## 2. BOM ↔ PCB refdes
+- BOM refs missing on PCB: none
+- PCB refs missing in BOM: none
+
+## 3. Pad-net vs golden model (pcb_nets.py)
+- Pads checked: 151
+- Pad-net FAIL: none
+
+## 4. Type / package / net evidence (critical parts)
+| Ref | PCB Value | Footprint | BOM PN | Net present | Status |
+|-----|-----------|-----------|--------|-------------|--------|
+| Q_GAS | AO3400 | SOT-23 | BOM=AO3400 | netOK=True | OK |
+| Q_AGIT | AO3400 | SOT-23 | BOM=AO3400 | netOK=True | OK |
+| Q_COOL | AO3400 | SOT-23 | BOM=AO3400 | netOK=True | OK |
+| Q_PUMP | AO3400 | SOT-23 | BOM=AO3400 | netOK=True | OK |
+| Q_VFD_D | AO3400 VFD_D | SOT-23 | BOM=AO3400 | netOK=True | OK |
+| Q_VFD_F | AO3400 VFD_F | SOT-23 | BOM=AO3400 | netOK=True | OK |
+| U20 | LM358 | SOIC-8_3.9x4.9mm_P1.27mm | BOM=LM358 | netOK=True | OK |
+| D2 | SS34 | D_SMA | BOM=SS34 | netOK=True | OK |
+| D3 | 1N5819 | D_SOD-123 | BOM=1N5819 | netOK=True | OK |
+| D4 | 1N5819 | D_SOD-123 | BOM=1N5819 | netOK=True | OK |
+| D5 | 1N5819 | D_SOD-123 | BOM=1N5819 | netOK=True | OK |
+| D6 | 1N5819 | D_SOD-123 | BOM=1N5819 | netOK=True | OK |
+| D_GAS | 1N4007 | D_SOD-123 | BOM=1N4007 | netOK=True | OK |
+| R_G1 | 1k | R_0603_1608Metric | BOM=RC0603 1k | netOK=True | OK |
+| R_AGIT_S | 1k | R_0603_1608Metric | BOM=RC0603 1k | netOK=True | OK |
+| R_COOL_S | 1k | R_0603_1608Metric | BOM=RC0603 1k | netOK=True | OK |
+| R_PUMP_S | 1k | R_0603_1608Metric | BOM=RC0603 1k | netOK=True | OK |
+| R_VFD_D_S | 1k | R_0603_1608Metric | BOM=RC0603 1k | netOK=True | OK |
+| R_VFD_F_S | 1k | R_0603_1608Metric | BOM=RC0603 1k | netOK=True | OK |
+| R_FA | 20k | R_0603_1608Metric | BOM=RC0603 20k | netOK=True | OK |
+| R_GA | 10k | R_0603_1608Metric | BOM=RC0603 10k | netOK=True | OK |
+| J_VFD_D | VFD1 AI/GND | BLOCK_TERM | BOM=1757018 | netOK=True | OK |
+| J_VFD_F | VFD2 AI/GND | BLOCK_TERM | BOM=1757018 | netOK=True | OK |
+| J9 | IDC 2x10 | IDC-Header_2x10_P2.54mm_Vertical | BOM=IDC-20 | netOK=True | OK |
+
+## 5. Firmware U10 → J9 → MOSFET gate (data)
+| FW define | J9 pin net | MOSFET gate pad | Expect | Status |
+|-----------|------------|-----------------|--------|--------|
+| PCF_OUT_GAS=0 | J9-5=GAS_EN | Q_GAS.1=GATE_GAS .2=GND | expect gate GATE_GAS / SRC=GND | OK |
+| PCF_OUT_VFD_D=1 | J9-6=VFD_D_RUN | Q_VFD_D.1=GATE_VFD_D .2=GND | expect gate GATE_VFD_D / SRC=GND | OK |
+| PCF_OUT_VFD_F=2 | J9-7=VFD_F_RUN | Q_VFD_F.1=GATE_VFD_F .2=GND | expect gate GATE_VFD_F / SRC=GND | OK |
+| PCF_OUT_AGIT=3 | J9-8=AGIT_EN | Q_AGIT.1=GATE_AGIT .2=GND | expect gate GATE_AGIT / SRC=GND | OK |
+| PCF_OUT_COOL=4 | J9-9=COOL_FAN_EN | Q_COOL.1=GATE_COOL .2=GND | expect gate GATE_COOL / SRC=GND | OK |
+| PCF_OUT_PUMP=5 | J9-10=PUMP_EN | Q_PUMP.1=GATE_PUMP .2=GND | expect gate GATE_PUMP / SRC=GND | OK |
+
+- U20 VDD=+12V_AUX, INA-/INB- feedback nets: True | nets={'1': 'VFD1_AI', '2': 'U20_INA_N', '3': 'DAC_D_OUT', '4': 'GND', '5': 'DAC_F_OUT', '6': 'U20_INB_N', '7': 'VFD2_AI', '8': '+12V_AUX'}
+- J_VFD AI + REL dry FOR: True
+- REL_VFD_D pads: {'LOAD': 'VFD1_FOR', 'AC': 'VFD1_FOR_COM', 'CTRL+': '+24V_BUS', 'CTRL-': 'VFD_D_RUN'}
+- REL_VFD_F pads: {'LOAD': 'VFD2_FOR', 'AC': 'VFD2_FOR_COM', 'CTRL+': '+24V_BUS', 'CTRL-': 'VFD_F_RUN'}
+- J_VFD_D pads: {'1': 'VFD1_AI', '2': 'GND'}
+- J_VFD_F pads: {'1': 'VFD2_AI', '2': 'GND'}
+
+## 6. Full PCB-02 catalog (ref / value / footprint)
+- C18: value='100nF' fp=Capacitor_SMD:C_0603_1608Metric
+- C19: value='100nF' fp=Capacitor_SMD:C_0603_1608Metric
+- C20: value='10uF' fp=Capacitor_SMD:C_0805_2012Metric
+- D2: value='SS34' fp=Diode_SMD:D_SMA
+- D3: value='1N5819' fp=Diode_SMD:D_SOD-123
+- D4: value='1N5819' fp=Diode_SMD:D_SOD-123
+- D5: value='1N5819' fp=Diode_SMD:D_SOD-123
+- D6: value='1N5819' fp=Diode_SMD:D_SOD-123
+- D_GAS: value='1N4007' fp=Diode_SMD:D_SOD-123
+- EMI1: value='FN2090' fp=D03:BLOCK_EMI
+- F_24V: value='Glass 4A' fp=D03:BLOCK_FUSE
+- F_CTRL: value='MCB C6 ctrl' fp=D03:BLOCK_FUSE
+- F_MAIN: value='MCB C32' fp=D03:BLOCK_FUSE
+- J3: value='Agitator' fp=Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+- J9: value='IDC 2x10' fp=Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical
+- J_GAS: value='Gas AC out' fp=D03:BLOCK_TERM
+- J_H1L: value='H1L lamps 1x6' fp=Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical
+- J_PE: value='PE M4' fp=D03:BLOCK_PE
+- J_VFD_D: value='VFD1 AI/GND' fp=D03:BLOCK_TERM
+- J_VFD_F: value='VFD2 AI/GND' fp=D03:BLOCK_TERM
+- K3: value='LC1D09BD agit' fp=D03:BLOCK_CONTACTOR
+- K4: value='LC1D09BD cool' fp=D03:BLOCK_CONTACTOR
+- K_GAS: value='LC1D09BD gas' fp=D03:BLOCK_CONTACTOR
+- MH1: value='M3' fp=MountingHole:MountingHole_3.2mm_M3
+- MH2: value='M3' fp=MountingHole:MountingHole_3.2mm_M3
+- MH3: value='M3' fp=MountingHole:MountingHole_3.2mm_M3
+- MH4: value='M3' fp=MountingHole:MountingHole_3.2mm_M3
+- PSU1: value='HDR-100-24' fp=D03:BLOCK_PSU
+- PSU2: value='LRS-35-12' fp=D03:BLOCK_PSU
+- Q_AGIT: value='AO3400' fp=Package_TO_SOT_SMD:SOT-23
+- Q_COOL: value='AO3400' fp=Package_TO_SOT_SMD:SOT-23
+- Q_GAS: value='AO3400' fp=Package_TO_SOT_SMD:SOT-23
+- Q_PUMP: value='AO3400' fp=Package_TO_SOT_SMD:SOT-23
+- Q_VFD_D: value='AO3400 VFD_D' fp=Package_TO_SOT_SMD:SOT-23
+- Q_VFD_F: value='AO3400 VFD_F' fp=Package_TO_SOT_SMD:SOT-23
+- REL_VFD_D: value='G5V VFD_D' fp=D03:BLOCK_SSR
+- REL_VFD_F: value='G5V VFD_F' fp=D03:BLOCK_SSR
+- R_AGIT_S: value='1k' fp=Resistor_SMD:R_0603_1608Metric
+- R_COOL_S: value='1k' fp=Resistor_SMD:R_0603_1608Metric
+- R_FA: value='20k' fp=Resistor_SMD:R_0603_1608Metric
+- R_FB: value='20k' fp=Resistor_SMD:R_0603_1608Metric
+- R_G1: value='1k' fp=Resistor_SMD:R_0603_1608Metric
+- R_G2: value='10k' fp=Resistor_SMD:R_0603_1608Metric
+- R_GA: value='10k' fp=Resistor_SMD:R_0603_1608Metric
+- R_GB: value='10k' fp=Resistor_SMD:R_0603_1608Metric
+- R_PUMP_S: value='1k' fp=Resistor_SMD:R_0603_1608Metric
+- R_Q3_G: value='10k' fp=Resistor_SMD:R_0603_1608Metric
+- R_Q4_G: value='10k' fp=Resistor_SMD:R_0603_1608Metric
+- R_Q7: value='4.7k' fp=Resistor_SMD:R_0603_1608Metric
+- R_VFD_D_G: value='10k' fp=Resistor_SMD:R_0603_1608Metric
+- R_VFD_D_S: value='1k' fp=Resistor_SMD:R_0603_1608Metric
+- R_VFD_F_G: value='10k' fp=Resistor_SMD:R_0603_1608Metric
+- R_VFD_F_S: value='1k' fp=Resistor_SMD:R_0603_1608Metric
+- U20: value='LM358' fp=Package_SO:SOIC-8_3.9x4.9mm_P1.27mm
+
+## 7. Full BOM PCB02 (RefDes / Qty / Part Number / Fungsi)
+- PSU1: qty=1 pn='HDR-100-24' fungsi='Control power'
+- PSU2: qty=1 pn='LRS-35-12' fungsi='Pump LED + panel aux + U20 VDD'
+- F_24V: qty=1 pn='4A slow' fungsi='24V bus protection'
+- K_GAS: qty=1 pn='LC1D09BD' fungsi='Gas master'
+- K3: qty=1 pn='LC1D09BD' fungsi='Agitator fixed'
+- K4: qty=1 pn='LC1D09BD' fungsi='Cooling fan'
+- REL_VFD_D: qty=1 pn='G5V-2-DC24' fungsi='Drum VFD FOR dry'
+- REL_VFD_F: qty=1 pn='G5V-2-DC24' fungsi='Fan VFD FOR dry'
+- Q_GAS: qty=1 pn='AO3400' fungsi='K_GAS coil low-side'
+- Q_AGIT: qty=1 pn='AO3400' fungsi='K3 coil low-side'
+- Q_COOL: qty=1 pn='AO3400' fungsi='K4 coil low-side'
+- Q_VFD_D: qty=1 pn='AO3400' fungsi='REL_VFD_D coil low-side'
+- Q_VFD_F: qty=1 pn='AO3400' fungsi='REL_VFD_F coil low-side'
+- Q_PUMP: qty=1 pn='AO3400' fungsi='Water pump 12V low-side'
+- U20: qty=1 pn='LM358' fungsi='DAC 3.3V->~10V VFD AI'
+- D2: qty=1 pn='SS34' fungsi='REL_VFD_D coil'
+- D3: qty=1 pn='1N5819' fungsi='K3 coil'
+- D4: qty=1 pn='1N5819' fungsi='Q_PUMP flyback'
+- D5: qty=1 pn='1N5819' fungsi='REL_VFD_F coil'
+- D6: qty=1 pn='1N5819' fungsi='K4 coil'
+- D_GAS: qty=1 pn='1N4007' fungsi='K_GAS coil'
+- F_MAIN: qty=1 pn='iC60N C32' fungsi='Mains branch'
+- F_CTRL: qty=1 pn='iC60N C6' fungsi='PSU control'
+- EMI1: qty=1 pn='FN2090-6-06' fungsi='PSU AC input'
+- J_PE: qty=1 pn='M4 stud' fungsi='Chassis earth'
+- J9: qty=1 pn='IDC-20' fungsi='Antar PCB MAIN<->IO'
+- J3: qty=1 pn='1757018' fungsi='Field tap IO'
+- J_GAS: qty=1 pn='1757018' fungsi='K_GAS switched L'
+- J_VFD_D: qty=1 pn='1757018' fungsi='Drum VFD analog'
+- J_VFD_F: qty=1 pn='1757018' fungsi='Fan VFD analog'
+- J_H1L: qty=1 pn='PinHeader_1x06' fungsi='Harness H1L'
+- R_G1: qty=1 pn='RC0603 1k' fungsi='Q_GAS series gate'
+- R_G2: qty=1 pn='RC0603 10k' fungsi='Q_GAS gate PD'
+- R_AGIT_S: qty=1 pn='RC0603 1k' fungsi='Q_AGIT series gate'
+- R_COOL_S: qty=1 pn='RC0603 1k' fungsi='Q_COOL series gate'
+- R_PUMP_S: qty=1 pn='RC0603 1k' fungsi='Q_PUMP series gate'
+- R_VFD_D_S: qty=1 pn='RC0603 1k' fungsi='Q_VFD_D series gate'
+- R_VFD_F_S: qty=1 pn='RC0603 1k' fungsi='Q_VFD_F series gate'
+- R_Q3_G: qty=1 pn='RC0603 10k' fungsi='Q_AGIT gate PD'
+- R_Q4_G: qty=1 pn='RC0603 10k' fungsi='Q_PUMP gate PD'
+- R_Q7: qty=1 pn='RC0603 4.7k' fungsi='Q_COOL gate PD'
+- R_VFD_D_G: qty=1 pn='RC0603 10k' fungsi='Q_VFD_D gate PD'
+- R_VFD_F_G: qty=1 pn='RC0603 10k' fungsi='Q_VFD_F gate PD'
+- R_FA: qty=1 pn='RC0603 20k' fungsi='U20 chA Rf'
+- R_GA: qty=1 pn='RC0603 10k' fungsi='U20 chA Rg'
+- R_FB: qty=1 pn='RC0603 20k' fungsi='U20 chB Rf'
+- R_GB: qty=1 pn='RC0603 10k' fungsi='U20 chB Rg'
+- C18: qty=1 pn='0603 100nF' fungsi='Local decoupling'
+- C19: qty=1 pn='0603 100nF' fungsi='Local decoupling'
+- C20: qty=1 pn='0805 10uF' fungsi='PSU bulk cap'

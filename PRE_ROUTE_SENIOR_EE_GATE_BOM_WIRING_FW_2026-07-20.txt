@@ -1,0 +1,35 @@
+# D03 SENIOR EE GATE — BOM + Wiring + Firmware + PCB seats
+# Date: 2026-07-20 — evidence only
+
+## VERDICT: GO ROUTE
+
+FAIL_COUNT = 0 (critical seat / tally)
+WARN = U8 + J_USB footprints present = DNP Fase 1 (BOM qty 0) — do not populate with DevKit
+
+## Artifacts measured
+
+| Artifact | Evidence |
+|----------|----------|
+| MAIN PCB | sha256[0:16]=`1874b60d7de27e95` fps=69 edge=4 tracks=0 |
+| IO PCB | sha256[0:16]=`e60ed0342cccdf55` fps=41 edge=4 tracks=23 |
+| Firmware | `FW_VERSION_BCD=0x010D` (`config.h` v1.13) |
+| BOM | `D03_BOM_Production.csv` |
+| Wiring | `02_J9_Antar_PCB.md` + `D03_Harness_Pinout.md` |
+
+## Cross-tally matrix (all PASS)
+
+| Gate | Result |
+|------|--------|
+| [1] BOM MAIN RefDes on PCB (incl. U14–U21→U_OPT20) | PASS |
+| [1b] Fase1 seat libs (DevKit/FIXED5V/TC×3/2×16); no L4/NTC1/J10 | PASS |
+| [2] BOM IO critical (PSU/K/REL/Q/U20/J9/J_H1L/…) | PASS |
+| [3] Pad-nets critical footprints == `pcb_nets.py` | PASS |
+| [4] FW GPIO×19 + PCF in/out + Q1 + U7 JEDEC + MCP4725 A0 | PASS |
+| [5] J9 wiring doc vs MAIN/IO pads 1–13 | PASS |
+| [6] H1 harness sample pins + 2×16 + U11 P4/P5 notes | PASS |
+| [7] DAC path U12/U13 → J9.11/12 → U20 → VFD AI | PASS |
+
+## Sign-off
+
+Component seats are correct and tally with BOM, wiring, and firmware.
+Routing may start. Fab only after DRC 0.

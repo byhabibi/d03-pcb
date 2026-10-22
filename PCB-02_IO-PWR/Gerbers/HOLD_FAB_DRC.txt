@@ -1,0 +1,7 @@
+*** BELUM ADA GERBER VALID — JANGAN KIRIM KE FAB ***
+
+Export Gerber lama (pre-route, 2026-07-13) sudah DIHAPUS dari paket ini.
+Route di: ../../KiCad_LIVE_PRE_ROUTE/D03-IO-PWR/
+Setelah DRC = 0: export Gerber baru ke folder ini, lalu hapus file ini.
+
+Lihat ../../README.txt dan ../../BOM/D03_BOM_Production.csv

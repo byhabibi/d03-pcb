@@ -1,0 +1,12 @@
+*** BELUM ADA GERBER VALID — JANGAN KIRIM KE FAB ***
+
+Export Gerber lama (WROOM-era, 2026-07-13) sudah DIHAPUS dari paket ini.
+Sebelum fab: route di KiCad_LIVE_PRE_ROUTE/D03-MAIN-CTRL → DRC 0 → export baru ke folder ini.
+
+Acuan seats Fase 1:
+  ../../BOM/D03_BOM_Production.csv
+  ../../docs/D03_Module_Optimization_Fase1.md
+  ../../KiCad_LIVE_PRE_ROUTE/D03-MAIN-CTRL/
+  ../../PRE_ROUTE_SENIOR_EE_GATE_BOM_WIRING_FW_2026-07-20.txt
+
+Setelah export valid: hapus file ini.
